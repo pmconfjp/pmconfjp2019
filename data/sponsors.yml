@@ -1,178 +1,32 @@
 platinas:
-  - name: LINE株式会社
+  - name: pmconf
     url: "https://linecorp.com"
-    logo_image_url: /assets/images/sponsors/line.png
-  - name: ピクシブ株式会社
-    url: "https://www.pixiv.net/"
-    logo_image_url: /assets/images/sponsors/pixiv.png
-  - name: スマートニュース株式会社
-    url: "https://www.smartnews.com/"
-    logo_image_url: /assets/images/sponsors/smartnews.png
-  - name: 株式会社メルカリ
-    url: "https://about.mercari.com/"
-    logo_image_url: /assets/images/sponsors/mercari.png
-  - name: 株式会社FiNC Technologies
-    url: "https://company.finc.com/"
-    logo_image_url: /assets/images/sponsors/FiNC.jpg
-  - name: 株式会社DeNA
-    url: "https://dena.com/"
-    logo_image_url: /assets/images/sponsors/dena.png
-  - name: 楽天株式会社
-    url: "https://corp.rakuten.co.jp/careers/jobs/producer/"
-    logo_image_url: /assets/images/sponsors/rakuten.png
-  - name: 株式会社マネーフォワード
-    url: "https://corp.moneyforward.com/"
-    logo_image_url: /assets/images/sponsors/mf.png
-  - name: 株式会社サイバーエージェント
-    url: "https://www.cyberagent.co.jp/"
-    logo_image_url: /assets/images/sponsors/cyberagent.png
-
+    logo_image_url: /assets/images/pmconf_ico.png
 golds:
-  - name: 株式会社リクルートコミュニケーションズ
-    url: "https://www.rco.recruit.co.jp/career/engineer/"
-    logo_image_url: /assets/images/sponsors/recruit.jpg
-  - name: 楽天株式会社 楽天トラベル
-    url: "https://corp.rakuten.co.jp/careers/jobs/producer/"
-    logo_image_url: /assets/images/sponsors/rakuten-travel.png
-  - name: 株式会社ドワンゴ
-    url: "http://dwango.co.jp/"
-    logo_image_url: /assets/images/sponsors/dwango.png
-  - name: 株式会社アイスタイル
-    url: "http://www.istyle.co.jp/"
-    logo_image_url: /assets/images/sponsors/istyle.jpg
-  - name: グロース・アーキテクチャ＆チームス株式会社
-    url: ""
-    logo_image_url: /assets/images/sponsors/graat.png
-
+  - name: pmconf
+    url: "https://linecorp.com"
+    logo_image_url: /assets/images/pmconf_ico.png
 silvers:
-  - name: 株式会社FOLIO
-    url: "https://corp.folio-sec.com/"
-    logo_image_url: /assets/images/sponsors/folio.png
-  - name: ギットハブ・ジャパン合同会社
-    url: "https://github.co.jp/"
-    logo_image_url: /assets/images/sponsors/github.png
+  - name: pmconf
+    url: "https://linecorp.com"
+    logo_image_url: /assets/images/pmconf_ico.png
 
 drinks:
-  - name: サイボウズ株式会社
-    url: "https://cybozu.co.jp/company/job/recruitment/list/product_manager.html"
-    logo_image_url: /assets/images/sponsors/cybozu.png
-  - name: freee株式会社
-    url: "https://www.freee.co.jp/"
-    logo_image_url: /assets/images/sponsors/freee.png
-  - name: 株式会社サイバーエージェント
-    url: "https://www.cyberagent.co.jp/"
-    logo_image_url: /assets/images/sponsors/cyberagent.png
-  - name: 株式会社ビズリーチ
-    url: "https://www.bizreach.co.jp/"
-    logo_image_url: /assets/images/sponsors/bizreach.png
-  - name: 株式会社グッドパッチ
-    url: "https://goodpatch.com/?lng=ja"
-    logo_image_url: /assets/images/sponsors/goodpatch.png
-  - name: パーソルキャリア株式会社
-    url: "https://www.persol-career.co.jp/"
-    logo_image_url: /assets/images/sponsors/persolcareer.png
+  - name: pmconf
+    url: "https://linecorp.com"
+    logo_image_url: /assets/images/pmconf_ico.png
 
 medias:
-  - name: 創業手帳
-    url: https://sogyotecho.jp
-    logo_image_url: /assets/images/sponsors/sogyotecho.png
-  - name: CAREER HACK
-    url: http://careerhack.en-japan.com/
-    logo_image_url: /assets/images/sponsors/careerhack.jpg
-  - name: Software Design
-    url: http://gihyo.jp/magazine/SD/
-    logo_image_url: /assets/images/sponsors/softwaredesign.png
-  - name: CodeZine
-    url: https://codezine.jp/
-    logo_image_url: /assets/images/sponsors/codezine.png
-  - name: "@IT"
-    url: http://www.atmarkit.co.jp/
-    logo_image_url: /assets/images/sponsors/atmarkit.png
+  - name: pmconf
+    url: "https://linecorp.com"
+    logo_image_url: /assets/images/pmconf_ico.png
 
 communities:
-  - name: POStudy ～アジャイル・プロダクトマネジメント研究会～
-    url: "http://www.postudy.com/"
-    logo_image_url: /assets/images/sponsors/postudy.png
-  - name: Product Managers Japan (PMJP)
-    url: "http://productmanagers.jp/"
-    logo_image_url: /assets/images/sponsors/pmjp.png
-  - name: pm-roppongi
-    url: "https://pm-roppongi.connpass.com/"
-    logo_image_url: /assets/images/sponsors/pmroppongi.png
-  - name: UX DAYS TOKYO
-    url: "https://uxdaystokyo.com/"
-    logo_image_url: /assets/images/sponsors/uxdaystokyo.png
-  - name: プロダクトマネージャーカフェ ～Product Manager Cafe～
-    url: "https://pdmcafe.connpass.com/"
-    logo_image_url: /assets/images/sponsors/pdmcafe.png
+  - name: pmconf
+    url: "https://linecorp.com"
+    logo_image_url: /assets/images/pmconf_ico.png
 
 personals:
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: https://s.gravatar.com/avatar/bef370f6c49237c98855628f1bdd9f86?size=50
-    url: "https://www.facebook.com/watcafe.yasumasa"
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: https://s.gravatar.com/avatar/2a815b2e33e0f1746450115aedbd4762?s=80
-    url: "https://ubiregi.com"
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: https://s.gravatar.com/avatar/1a242c28b2b171022935cc13052cad89?s=80
-    url: "https://mobile.twitter.com/ns_twt"
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: https://s.gravatar.com/avatar/32254a9401558006facdaf6e9f89615d?s=80
-    url: "https://twitter.com/hiro93n"
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: https://s.gravatar.com/avatar/9612a7b84a4b77d7fac8c3e09df0babd?s=80
-    url: "https://www.careercross.com/"
-  - name: ""
-    logo_image_url: https://s.gravatar.com/avatar/ec344381c18863d042ea944d162d124e?s=80
-    url: "https://www.otsuya.co"
-  - name: ""
-    logo_image_url: https://s.gravatar.com/avatar/19303bedef987db7db3d18c9c2d8ca92?size=50
-    url: "https://twitter.com/mizuman_"
-  - name: ""
-    logo_image_url: https://s.gravatar.com/avatar/771e1ed651a8862797a74524d8acf7a8?s=80
-    url: "https://www.unerry.co.jp/"
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: https://s.gravatar.com/avatar/cc7d9ff0ee90f83be2fe9295892856d1?s=80
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: https://s.gravatar.com/avatar/5100d0a23353465d2ad6c42db6c1a9dc?s=80
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
-    logo_image_url: https://s.gravatar.com/avatar/ce7ce4d0ee561e6d5473c9ef7858ced0?s=80
-    url: "https://trailhead.salesforce.com/me/tak4hir0"
-  - name: ""
-    logo_image_url: /assets/images/pmconf_ico.png
-  - name: ""
+  - name: pmconf
+    url: "https://linecorp.com"
     logo_image_url: /assets/images/pmconf_ico.png

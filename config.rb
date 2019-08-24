@@ -66,7 +66,7 @@ helpers do
   end
 
   def page_url
-    "https://2018.pmconf.jp#{current_page.url}"
+    "https://2019.pmconf.jp#{current_page.url}"
   end
 
   def jobs
@@ -115,7 +115,7 @@ end
 activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.branch = 'master'
-  deploy.remote = "https://#{ENV['GH_TOKEN']}@github.com/pmconfjp/pmconfjp2018.git" # rubocop:disable all
+  deploy.remote = "https://#{ENV['GH_TOKEN']}@github.com/pmconfjp/pmconfjp2019.git" # rubocop:disable all
   deploy.build_before = true
   deploy.commit_message = '[ci skip]'
 end

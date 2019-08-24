@@ -1,0 +1,27 @@
+.sponsorJobs {
+  width: 80%;
+  margin: 0 auto;
+
+  &_item {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+
+    &_organization {
+      width: 40%;
+      font-weight: bold;
+    }
+
+    &_organization,
+    &_title {
+      display: table-cell;
+
+      @media (max-width: $screen-xs-max) {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

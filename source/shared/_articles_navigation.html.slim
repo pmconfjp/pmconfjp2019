@@ -1,0 +1,5 @@
+nav.articlesNavigation
+  ul.list-unstyled.list-inline
+    li = link_to '記事一覧', '/articles', class: "#{'active' if current == 'index'}"
+    - data.categories.each do |category|
+      li = link_to category.ja, category_path(category.name), class: "#{'active' if current == category.name}"

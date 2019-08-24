@@ -1,0 +1,98 @@
+.sponsors {
+
+  &_title {
+    text-align: center;
+  }
+
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #eee;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+      }
+
+      &-platinas {
+        @extend .sponsors_list_item;
+        width: 260px;
+        height: 260px;
+        padding: 20px
+      }
+
+      &-golds {
+        @extend .sponsors_list_item;
+        width: 220px;
+        height: 220px;
+        padding: 20px;
+      }
+
+      &-booths {
+        @extend .sponsors_list_item;
+        width: 200px;
+        height: 200px;
+        padding: 15px;
+      }
+
+      &-goods {
+        @extend .sponsors_list_item;
+        width: 180px;
+        height: 180px;
+      }
+
+      &-silvers {
+        @extend .sponsors_list_item;
+        width: 160px;
+        height: 160px;
+      }
+
+      &-logos {
+        @extend .sponsors_list_item;
+        width: 140px;
+        height: 140px;
+      }
+
+      &-drinks {
+        @extend .sponsors_list_item;
+        width: 120px;
+        height: 120px;
+        padding: 15px;
+      }
+
+      &-medias {
+        @extend .sponsors_list_item;
+        width: 100px;
+        height: 100px;
+      }
+
+      &-personals {
+        @extend .sponsors_list_item;
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+      }
+    }
+  }
+
+  &_description {
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+    padding-top: 15px;
+    line-height: 1.8;
+    color: #888;
+    font-size: .8em;
+  }
+}

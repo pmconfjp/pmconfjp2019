@@ -1,0 +1,16 @@
+$font-size-base: 17px;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", "メイリオ", meiryo, sans-serif;
+$font-family-cursive: 'Fugaz One', cursive;
+$font-family-damion: 'Damion', cursive;
+
+$brand-primary: #1791f5;
+$brand-info: rgba(#000, .4);
+
+$body-bg: #f8f8f8;
+$text-color: #4a4a4a;
+$link-color: $brand-primary;
+
+$line-height-base: 1.7;
+
+$grid-gutter-width: 30px !default;
+$container-large-desktop: (840px + $grid-gutter-width);

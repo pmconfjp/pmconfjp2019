@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'mixins';
+
+// Bootstrap
+// ---------
+@import 'bootstrap_custom';
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Google Font
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/css?family=Damion|Fugaz+One);
+
+// partials
+@import 'article_list';
+@import 'article';
+@import 'articles_navigation';
+@import 'common_footer';
+@import 'common_header_navigation';
+@import 'common_header';
+@import 'common_body';
+@import 'human_card';
+@import 'staff_list';
+@import 'information';
+@import 'large_header_navigation';
+@import 'large_header';
+@import 'organizers';
+@import 'page_header';
+@import 'schedule';
+@import 'schedule_table';
+@import 'section';
+@import 'session';
+@import 'social_btns';
+@import 'speakers';
+@import 'sponsor_jobs';
+@import 'sponsors_text';
+@import 'sponsors';
+@import 'staff_readme';
+@import 'tips_article';
+
+body {
+  -webkit-font-smoothing: antialiased;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: $font-size-small;
+  }
+}

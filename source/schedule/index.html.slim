@@ -1,0 +1,857 @@
+---
+title: タイムテーブル
+descriptipon: カンファレンスのタイムテーブルについて紹介します。
+---
+
+.container
+  .pageHeader
+    h1.pageHeader_title
+      = current_page.data.title
+  .schedule
+    / .alert.alert-info
+    /   | タイムテーブルは一部調整中です 🙏🏻
+    /   br
+    /   | 時刻や内容に変更が入る可能性があります。ご了承ください。
+
+    h2.schedule_title
+      | Day1: 2018/11/06 (火)
+    / ul.nav.nav-tabs
+    /   li.active
+    /     =link_to '10/24 (月)', '#day1', 'data-toggle' => 'tab'
+    .tab-content
+      .tab-pane.active#day1
+        .scheduleTable
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:00 - 10:00
+            .scheduleTable_line_session-all.break
+              | Registration
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:00 - 10:15
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "関 満徳"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-01]
+                    .scheduleTable_line_title
+                      | Welcome Talk
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:15 - 10:45
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "丹野 瑞紀"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-02]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0602/" 基調講演: 愛されるプロダクトを創るべき「3つの理由」
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:45 - 11:00
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:00 - 11:30
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "犬飼 敏貴"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-03]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0603/" 未来を変えるプロダクト作りへの挑戦 ～FiNCの今までとこれから～
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:30 - 11:45
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:45 - 12:15
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "熊谷 亘太郎"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-04]
+                    span.scheduleTable_line_themecomment
+                      | ※資料非公開
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0604/" 世界で愛されるプロダクトを作ろう
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 12:15 - 12:25
+              .scheduleTable_line_time_min
+               | 10min
+            .scheduleTable_line_session-all.break
+              | ランチ配布 / Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 12:25 - 12:55
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "荒井 茂太"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-05]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0605/" [対談] 食文化を支えるプロダクトマネージャーの仕事術
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              .scheduleTable_line_time_min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "及川 卓也"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    .scheduleTable_line_title
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 12:55 - 13:10
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "吉松 徹郎"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-06]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0606/" クチコミサイトからプラットフォームへの挑戦プロセス
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:10 - 13:25
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "鈴木 雄介"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-07]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0607/" プロダクトマネージャーにもコーチは必要だ
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:25 - 13:40
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:40 - 14:10
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "金田 悠希"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-08]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0608/" ユーザーと両想いになるサービスの作り方
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:10 - 14:25
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:25 - 14:55
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "長瀬 慶重"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-09]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0609/" インターネットテレビ局「AbemaTV」プロダクトの変遷
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:55 - 15:10
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:10 - 15:40
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "清水 智雄"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-10]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0610/" 事業ドメインを絞り込むことで磨かれるプロダクトマネジメント
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:40 - 15:55
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:55 - 16:25
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "金山 裕樹"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-11]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0611/" 愛されるプロダクトマネージャーのプロダクトマネジメント~愛されるためにまずは成果を残す~
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 16:25 - 16:40
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 16:40 - 17:10
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "入江 和孝"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-12]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0612/" LINE開発の舞台裏とプロダクトマネージャー
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 17:10 - 17:25
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 17:25 - 17:55
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "泉 雄介"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-13]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/06/session0613/" 失敗をデザインする
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 17:55 - 18:05
+              .scheduleTable_line_time_min
+               | 10min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "関 満徳"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [06-14]
+                    .scheduleTable_line_title
+                      | クロージング
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 18:30 - 20:00
+              .scheduleTable_line_time_min
+               | 1.5h
+            .scheduleTable_line_session-all.break
+              | ネットワーキング <br />（1Fにて開催になりますので、ご移動お願いいたします）
+  .schedule
+    h2.schedule_title
+      | Day1 Log (togetter)
+    .schedule_log
+      <script src="https://s.togetter.com/static/web/js/parts.js"></script><script>tgtr.ListWidget({id:'1285588',url:'https://togetter.com/',width:'100%',height:'320px'});</script>
+
+  .schedule
+    h2.schedule_title
+      | Day2: 2018/11/07 (水)
+    .tab-content
+      .tab-pane.active#day2
+        .scheduleTable
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:20 - 10:00
+            .scheduleTable_line_session-all.break
+              | Registration
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:00 - 10:15
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "関 満徳"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-01]
+                    .scheduleTable_line_title
+                      | Welcome Talk
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:15 - 10:45
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "甲斐 真一郎"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-02]
+                    span.scheduleTable_line_themecomment
+                      | ※資料非公開
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/07/session0702/" 巨大なFinTech事業開発におけるプロダクトマネジメント
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:45 - 11:00
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:00 - 11:30
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "今井 義人"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-03]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/07/session0703/" C向けアプリのPM経験者から見た、B2B Saasのプロダクトマネジメント
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:30 - 11:45
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:45 - 12:15
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "塩出 晴海"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-04]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/07/session0704/" 気がついたらプロダクトマネージャーになっていた
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 12:15 - 12:25
+              .scheduleTable_line_time_min
+               | 10min
+            .scheduleTable_line_session-all.break
+              | ランチ配布 / Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 12:25 - 12:40
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "宮里 裕樹"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-05]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/07/session0705/" リクルートの横断組織で考えるプロダクトマネジメント
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              .scheduleTable_line_time_min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "金田 將吾"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 12:40 - 12:55
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "山下 徹朗"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-06]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/07/session0706/" 顧客、会社、チームをHappyにするプロダクトマネジメント ～観点・プロセス・レバレッジ～
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 12:55 - 13:10
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "池田 明啓"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-07]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/07/session0707/" Build Narrative in Product
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              .scheduleTable_line_time_min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "宮城 良征"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    .scheduleTable_line_title
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:10 - 13:40
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:40 - 14:10
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "Jasper WU"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-09]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/07/session0709/" The mindset of building the product that user will love
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:10 - 14:25
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:25 - 14:55
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "宮田 善孝"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-10]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/07/session0710/" 北米・アジア・欧州のプロダクトマネジメントとスマートニュースのプロダクトマネジメント
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:55 - 15:10
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:10 - 15:40
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "陈兆伟 (Chen Zhaowei)"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-11]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/07/session0711/" 中国のプロダクトマネジメントのリアル
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:40 - 15:55
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:55 - 16:25
+              .scheduleTable_line_time_min
+               | 30min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "馬場 光"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-12]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/07/session0712/" Anycaにおけるプロダクトマネジメント
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 16:25 - 16:40
+              .scheduleTable_line_time_min
+               | 15min
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 16:40 - 17:40
+              .scheduleTable_line_time_min
+               | 60min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "馬田 隆明"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-13]
+                    span.scheduleTable_line_theme
+                      | [資料公開中]
+                    .scheduleTable_line_title
+                      a href="../sessions/2018/10/07/session0713/" [ワークショップ] 日本のプロダクトマネージャーは今何をすべきか
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              .scheduleTable_line_time_min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "関 満徳"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    .scheduleTable_line_title
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              .scheduleTable_line_time_min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "坂本 登史文"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    .scheduleTable_line_title
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              .scheduleTable_line_time_min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "横道 稔"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    .scheduleTable_line_title
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 17:40 - 17:50
+              .scheduleTable_line_time_min
+               | 10min
+            .scheduleTable_line_session
+              - speakers.each do |speaker|
+                - if speaker.name == "関 満徳"
+                  .scheduleTable_line_speakerIcon
+                    = image_tag speaker.profile_image_url, width: '100', height: '100'
+                  .scheduleTable_line_descriptions
+                    span.scheduleTable_line_theme
+                      | [07-14]
+                    .scheduleTable_line_title
+                      | クロージング
+                    .scheduleTable_line_speaker
+                      = speaker.name
+                      br
+                      = speaker.organization
+                      =< speaker.title
+          .scheduleTable_line
+            .scheduleTable_line_session-all.break
+              | ※ Day2 は ネットワーキングはありません
+              br
+              | ※ 公式コミュニティ主催のアフターパーティ、
+              <a href="https://postudy.doorkeeper.jp/events/82776" target="_blank">[緊急開催] プロダクトマネージャー・カンファレンス 2018 公式コミュニティ 合同主催パーティー</a> が開催されます。ご興味おありの方はぜひご参加ください。
+  .schedule
+    h2.schedule_title
+      | Day2 Log (togetter)
+    .schedule_log
+      <script src="https://s.togetter.com/static/web/js/parts.js"></script><script>tgtr.ListWidget({id:'1285931',url:'https://togetter.com/',width:'100%',height:'320px'});</script>

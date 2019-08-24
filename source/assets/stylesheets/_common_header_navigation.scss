@@ -1,0 +1,29 @@
+.commonHeaderNavigation {
+  float: right;
+
+  ul { margin-bottom: 0; }
+
+  &_list {
+    @include textlink(#fff);
+    display: inline-block;
+
+    a {
+      line-height: $header-height;
+      padding: 0 10px;
+      font-size: .9em;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    float: none;
+    text-align: center;
+
+    &_list {
+      padding-bottom: 10px;
+
+      a {
+        line-height: 1.4;
+      }
+    }
+  }
+}

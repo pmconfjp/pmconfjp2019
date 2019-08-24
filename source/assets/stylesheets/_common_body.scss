@@ -1,0 +1,32 @@
+.commonBody {
+  padding-top: $header-height;
+
+  &_schedule {
+    text-align: center;
+
+    li {
+      float: none;
+      display: inline-block;
+      min-width: 50%;
+
+      a,
+      a:active,
+      a:focus,
+      a:hover {
+        font-weight: bold;
+        color: #888;
+      }
+
+      &.active a,
+      &.active a:active,
+      &.active a:focus,
+      &.active a:hover {
+        background-color: $brand-sub-color;
+        color: $brand-sub-text-color;
+        border: 0;
+        border-bottom: 1px solid $brand-sub-color;
+        font-weight: bold;
+      }
+    }
+  }
+}

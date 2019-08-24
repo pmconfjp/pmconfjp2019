@@ -1,0 +1,207 @@
+doctype html
+
+html
+  head[prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#']
+    = partial 'shared/head'
+
+  body
+    = partial 'shared/pre_body_scripts'
+
+    = partial 'shared/common_header'
+
+    .container.commonBody
+      article.article[itemscope itemtype='http://schema.org/Article']
+        h2.session_subtitle
+          | セッション情報
+        .article_socialButtons.hidden-xs
+          .article_tweetBtn
+            a[href="https://twitter.com/share"
+              class="twitter-share-button"
+              data-url="#{page_url}"
+              data-text="#{page_title}"
+              data-related="pmconfjp"
+              data-hashtags="pmconfjp"] Tweet
+          .article_likeBtn
+            .fb-like[data-href="#{page_url}"
+                     data-layout="button_count"
+                     data-action="like"
+                     data-show-faces="false"
+                     data-share="false"]
+          .article_hatenaBtn
+            a[href="http://b.hatena.ne.jp/entry/#{page_url}"
+              class="hatena-bookmark-button"
+              data-hatena-bookmark-title="#{page_title}"
+              data-hatena-bookmark-layout="simple-balloon"
+              title="このエントリーをはてなブックマークに追加"]
+              img[src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
+                  alt="このエントリーをはてなブックマークに追加"
+                  width="20" height="20" style="border: none;"]
+        .session_theme[itemprop='theme'] = current_page.data.theme
+        h1.session_title[itemporp='name'] = current_page.data.title
+        .session_speaker[itemprop='author' itemscope itemtype='http://schema.org/Person']
+          - speakers.each do |speaker|
+            - if speaker.name == current_page.data.author
+              .session_speaker_block
+                .session_speaker_names
+                  .session_speaker_orgs
+                    span.session_speaker_organization = speaker.organization
+                    span.session_speaker_title = speaker.title
+                  .session_speaker_name[itemprop='name'] = current_page.data.author
+            - if speaker.name == current_page.data.co_author
+              .session_speaker_block
+                .session_speaker_names
+                  .session_speaker_orgs
+                    span.session_speaker_organization = speaker.organization
+                    span.session_speaker_title = speaker.title
+                  .session_speaker_name[itemprop='name'] = current_page.data.co_author
+            - if speaker.name == current_page.data.co_author2
+              .session_speaker_block
+                .session_speaker_names
+                  .session_speaker_orgs
+                    span.session_speaker_organization = speaker.organization
+                    span.session_speaker_title = speaker.title
+                  .session_speaker_name[itemprop='name'] = current_page.data.co_author2
+            - if speaker.name == current_page.data.co_author3
+              .session_speaker_block
+                .session_speaker_names
+                  .session_speaker_orgs
+                    span.session_speaker_organization = speaker.organization
+                    span.session_speaker_title = speaker.title
+                  .session_speaker_name[itemprop='name'] = current_page.data.co_author3
+            - if speaker.name == current_page.data.co_author4
+              .session_speaker_block
+                .session_speaker_names
+                  .session_speaker_orgs
+                    span.session_speaker_organization = speaker.organization
+                    span.session_speaker_title = speaker.title
+                  .session_speaker_name[itemprop='name'] = current_page.data.co_author4
+
+        .article_body[itemprop='articleBody']
+          = yield
+
+          - if current_page.data.author.present?
+            .session_introduction
+              - speakers.each do |speaker|
+                - if speaker.name == current_page.data.author
+                  .session_introduction_block
+                    = image_tag speaker.profile_image_url, class: 'session_introduction_image'
+                    .session_introduction_profileBlock
+                      .session_introduction_profile
+                        .session_introduction_title
+                          | 登壇者プロフィール
+                        - if current_page.data.co_author.present?
+                          .session_introduction_authorName
+                            = speaker.name
+                        = speaker.profile
+                      .session_introduction_socialLinks
+                        - if speaker.twitter
+                          = link_to speaker.twitter, target: '_blank' do
+                            i.fa.fa-twitter-square
+                        - if speaker.facebook
+                          = link_to speaker.facebook, target: '_blank' do
+                            i.fa.fa-facebook-square
+                        - if speaker.github
+                          = link_to speaker.github, target: '_blank' do
+                            i.fa.fa-github-square
+                        - if speaker.link
+                          = link_to speaker.link, target: '_blank' do
+                            i.fa.fa-link
+                - if speaker.name == current_page.data.co_author
+                  .session_introduction_block
+                    = image_tag speaker.profile_image_url, class: 'session_introduction_image'
+                    .session_introduction_profileBlock
+                      .session_introduction_profile
+                        .session_introduction_title
+                          | 登壇者プロフィール
+                        .session_introduction_authorName
+                          = speaker.name
+                        = speaker.profile
+                      .session_introduction_socialLinks
+                        - if speaker.twitter
+                          = link_to speaker.twitter, target: '_blank' do
+                            i.fa.fa-twitter-square
+                        - if speaker.facebook
+                          = link_to speaker.facebook, target: '_blank' do
+                            i.fa.fa-facebook-square
+                        - if speaker.github
+                          = link_to speaker.github, target: '_blank' do
+                            i.fa.fa-github-square
+                        - if speaker.link
+                          = link_to speaker.link, target: '_blank' do
+                            i.fa.fa-link
+                - if speaker.name == current_page.data.co_author2
+                  .session_introduction_block
+                    = image_tag speaker.profile_image_url, class: 'session_introduction_image'
+                    .session_introduction_profileBlock
+                      .session_introduction_profile
+                        .session_introduction_title
+                          | 登壇者プロフィール
+                        .session_introduction_authorName
+                          = speaker.name
+                        = speaker.profile
+                      .session_introduction_socialLinks
+                        - if speaker.twitter
+                          = link_to speaker.twitter, target: '_blank' do
+                            i.fa.fa-twitter-square
+                        - if speaker.facebook
+                          = link_to speaker.facebook, target: '_blank' do
+                            i.fa.fa-facebook-square
+                        - if speaker.github
+                          = link_to speaker.github, target: '_blank' do
+                            i.fa.fa-github-square
+                        - if speaker.link
+                          = link_to speaker.link, target: '_blank' do
+                            i.fa.fa-link
+                - if speaker.name == current_page.data.co_author3
+                  .session_introduction_block
+                    = image_tag speaker.profile_image_url, class: 'session_introduction_image'
+                    .session_introduction_profileBlock
+                      .session_introduction_profile
+                        .session_introduction_title
+                          | 登壇者プロフィール
+                        .session_introduction_authorName
+                          = speaker.name
+                        = speaker.profile
+                      .session_introduction_socialLinks
+                        - if speaker.twitter
+                          = link_to speaker.twitter, target: '_blank' do
+                            i.fa.fa-twitter-square
+                        - if speaker.facebook
+                          = link_to speaker.facebook, target: '_blank' do
+                            i.fa.fa-facebook-square
+                        - if speaker.github
+                          = link_to speaker.github, target: '_blank' do
+                            i.fa.fa-github-square
+                        - if speaker.link
+                          = link_to speaker.link, target: '_blank' do
+                            i.fa.fa-link
+                - if speaker.name == current_page.data.co_author4
+                  .session_introduction_block
+                    = image_tag speaker.profile_image_url, class: 'session_introduction_image'
+                    .session_introduction_profileBlock
+                      .session_introduction_profile
+                        .session_introduction_title
+                          | 登壇者プロフィール
+                        .session_introduction_authorName
+                          = speaker.name
+                        = speaker.profile
+                      .session_introduction_socialLinks
+                        - if speaker.twitter
+                          = link_to speaker.twitter, target: '_blank' do
+                            i.fa.fa-twitter-square
+                        - if speaker.facebook
+                          = link_to speaker.facebook, target: '_blank' do
+                            i.fa.fa-facebook-square
+                        - if speaker.github
+                          = link_to speaker.github, target: '_blank' do
+                            i.fa.fa-github-square
+                        - if speaker.link
+                          = link_to speaker.link, target: '_blank' do
+                            i.fa.fa-link
+
+        .session_footer
+          time.session_addDate[itemprop='datePublished']
+            | 追加日:
+            = Date.parse(current_page.data.date).strftime('%Y/%m/%d')
+
+    = partial 'shared/common_footer'

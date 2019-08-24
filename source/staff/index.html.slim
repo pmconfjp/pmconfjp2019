@@ -1,0 +1,29 @@
+---
+title: 運営
+descriptipon: 運営スタッフ一覧と運営へのお問い合わせについて掲載しています。
+---
+
+.container
+  .pageHeader
+    h1.pageHeader_title
+      = current_page.data.title
+  .staffList
+    h2.staffList_title 実行委員
+    .staffList_list
+      - data.staff.organizers.each do |organizer|
+        = partial 'staff/human_card', locals: { human: organizer }
+/    h2.staffList_title 事務局
+/    .staffList_list
+/      - data.staff.secretariat.each do |secretariat|
+/        = partial 'staff/human_card', locals: { human: secretariat }
+
+    h2.staffList_title お問い合わせ
+    p プロダクトマネージャー・カンファレンス 運営事務局
+    p
+      i.fa.fa-fw.fa-envelope-o
+      =< link_to 'info@pmconf.jp', 'mailto:info@pmconf.jp', target: '_blank'
+    hr
+    p.small
+      | Designed by #{link_to 'htomine', 'https://github.com/htomine', target: '_blank'}
+      br
+      | Hosted by #{link_to 'GitHub', 'https://github.com/htomine/pmconf', target: '_blank'}

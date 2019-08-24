@@ -1,0 +1,145 @@
+.scheduleTable {
+  $time-cell-width: 120px;
+
+  width: 100%;
+  margin-top: 20px;
+
+  &_header {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+
+    &_time {
+      width: $time-cell-width;
+      min-width: $time-cell-width;
+      margin-right: 15px;
+      border-right: 1px solid #eee;
+
+      &_min {
+        font-size: 13px;
+        font-weight: bold;
+        color: #e0a948;
+      }
+    }
+
+    &_session {
+      flex-grow: 1;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 0 10px;
+
+      & + & {
+        padding-left: 20px;
+        border-left: 1px solid #eee;
+      }
+    }
+  }
+
+  &_line {
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+
+    &_time {
+      width: $time-cell-width;
+      min-width: $time-cell-width;
+      font-size: .9em;
+      margin-right: 15px;
+      border-right: 1px solid #eee;
+
+      &_min {
+        font-size: 13px;
+        font-weight: bold;
+        color: #e0a948;
+      }
+    }
+
+    &_session {
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 30;
+      padding-right: 16px;
+
+      & + & {
+        padding-left: 20px;
+        border-left: 1px solid #eee;
+      }
+
+      &-all {
+        @extend .scheduleTable_line_session;
+        display: inline-block;
+        font-weight: bold;
+        margin-left: 115px;
+        align-self: center;
+
+        &.break {
+          font-weight: normal;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          margin-left: 15px;
+        }
+      }
+    }
+
+    &_descriptions {
+      padding: 0 15px;
+    }
+
+    &_speakerIcon {
+      img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        display: none;
+      }
+    }
+
+    &_title {
+      margin: 5px 0;
+      font-size: 1.2em;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    &_theme {
+      background-color: darken($brand-color, 10%);
+      border-radius: 2px;
+      font-size: 13px;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 3px 5px;
+      margin-right: 7px;
+    }
+
+    &_themecomment {
+      font-size: 13px;
+      color: green;
+      font-weight: bold;
+      padding: 3px 5px;
+    }
+
+    &_speaker {
+      font-size: .9em;
+      color: #888;
+      line-height: 1.4;
+    }
+
+    &_documents {
+      font-size: 1em;
+      color: #4a4a4a;
+      margin-top: 8px;
+    }
+  }
+
+  &_detail {
+    text-align: center;
+    margin-top: 40px;
+  }
+}

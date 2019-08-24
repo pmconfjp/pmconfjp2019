@@ -1,0 +1,16 @@
+---
+title: 記事一覧
+description: 記事の一覧です。
+blog: articles
+---
+
+.container
+  .pageHeader
+    h1.pageHeader_title = current_page.data.title
+    / = partial 'shared/articles_navigation', locals: { current: 'index' }
+  ul.list-unstyled.articleList
+    - page_articles(blog_controller.name).each do |article|
+      li
+        article.articleList_article
+          h1.articleList_title = link_to article.title, article
+          time.articleList_time = article.date.strftime('%Y/%m/%d')

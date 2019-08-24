@@ -1,0 +1,57 @@
+organizers:
+  - name: 関 満徳 (実行委員長)
+    organization: グロースエクスパートナーズ株式会社
+    title: ITアーキテクト
+    twitter: https://twitter.com/fullvirtue
+    github: https://github.com/fullvirtue
+    facebook: https://facebook.com/fullvirtue
+    link: http://fullvirtue.com/
+    profile_image_url: /assets/images/profile_images/fullvirtue.png
+  - name: 及川 卓也
+    organization: フリーランス
+    twitter: https://twitter.com/takoratta
+    github: https://github.com/takoratta
+    facebook: https://facebook.com/takoratta
+    link: http://takoratta.hatenablog.com/
+    profile_image_url: /assets/images/profile_images/takoratta.jpeg
+  - name: 坂本 登史文
+    organization: freee株式会社
+    title: 執行役員プロダクトマネージャー
+    twitter: https://twitter.com/aomegane1985
+    github: https://github.com/aomegane
+    facebook: https://facebook.com/sakamoto10423
+    profile_image_url: /assets/images/profile_images/aomegane.jpeg
+  - name: 田中 正巳
+    organization: 株式会社サイバーエージェント
+    title: AIRTRACK 開発責任者
+    twitter: https://twitter.com/b_marsa
+    github: https://github.com/b-marsa
+    facebook: https://www.facebook.com/ysl882orbmarsa
+    profile_image_url: /assets/images/profile_images/MasamiTanaka.jpg
+  - name: 丹野 瑞紀
+    organization: 
+    twitter: https://twitter.com/mizukitanno
+    github: https://github.com/mizukitanno
+    facebook: https://facebook.com/mizukitanno
+    link: http://tannomizuki.hatenablog.com/
+    profile_image_url: /assets/images/profile_images/mizukitanno.png
+  - name: 東峰 裕之
+    organization: Increments株式会社
+    title: プロダクトマネージャー
+    twitter: https://twitter.com/htomine
+    github: https://github.com/htomine
+    facebook: https://facebook.com/htomine
+    link: http://htomine.hateblo.jp/
+    profile_image_url: /assets/images/profile_images/htomine.png
+  - name: 三浦 伸明
+    organization: 株式会社サイバーエージェント
+    twitter: https://twitter.com/miuranobuak
+    github: https://github.com/miuranobuaki
+    facebook: https://www.facebook.com/nobuaki.miura
+    profile_image_url: /assets/images/profile_images/NobuakiMiura.png
+  - name: 横道 稔
+    organization: LINE株式会社
+    title: アジャイルコーチ
+    twitter: https://twitter.com/ykmc09
+    facebook: https://facebook.com/ykmc09
+    profile_image_url: /assets/images/profile_images/ykmc09.jpeg

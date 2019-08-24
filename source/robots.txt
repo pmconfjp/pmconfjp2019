@@ -1,0 +1,5 @@
+User-agent: *
+Sitemap: http://2018.pmconf.jp/sitemap.xml
+Disallow: /assets/files/pmconfjp_sponsorship_letter.pdf
+Disallow: /info_sponsor/
+Disallow: /info_speaker/

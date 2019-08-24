@@ -1,0 +1,104 @@
+.session {
+  &_subtitle {
+    display: inline-block;
+    margin: 0 0 20px;
+    border-bottom: 3px solid $brand-color;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+    font-weight: normal;
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 40px;
+    }
+  }
+
+  &_title {
+    margin: 10px 0 0;
+    line-height: 1.4;
+    font-size: 2.2em;
+    font-weight: bold;
+  }
+
+  &_speaker {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    &_block {
+      display: flex;
+
+      + .session_speaker_block {
+        margin-top: 10px;
+      }
+    }
+
+    &_names {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &_orgs {
+      color: #888;
+      font-size: 14px;
+    }
+
+    &_title {
+      margin-left: 5px;
+    }
+  }
+
+  &_introduction {
+    border-top: 1px solid #eee;
+    margin: 50px 0 10px;
+    padding-top: 20px;
+
+    &_title {
+      font-size: 1em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    &_authorName {
+      font-weight: bold;
+    }
+
+    &_block {
+      display: flex;
+
+      + .session_introduction_block {
+        margin-top: 20px;
+
+        .session_introduction_title {
+          display: none;
+        }
+      }
+    }
+
+    &_image {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin-right: 20px;
+      align-self: center;
+    }
+
+    &_profile {
+      font-size: 14px;
+    }
+
+    &_socialLinks {
+      margin-top: 8px;
+      font-size: 20px;
+
+      a {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &_footer {
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 14px;
+    text-align: right;
+  }
+}

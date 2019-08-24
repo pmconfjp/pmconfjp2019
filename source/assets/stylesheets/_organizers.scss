@@ -1,0 +1,22 @@
+.organizers {
+  text-align: center;
+
+  &_list:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &_icon {
+    @include square(30px);
+    border-radius: 50%;
+    vertical-align: top;
+    margin: {
+      top: 2px;
+      right: 3px;
+    }
+  }
+
+  &_name {
+    display: inline;
+    font-size: 1.2em;
+  }
+}

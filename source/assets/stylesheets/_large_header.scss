@@ -1,0 +1,118 @@
+.largeHeader {
+  background-color: $brand-color;
+  width: 100%;
+  text-align: center;
+  vertical-align: bottom;
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0,0,0,.1);
+
+  .containers {
+    position: relative;
+    z-index: 1;
+  }
+
+  canvas {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 0;
+    opacity: 0;
+    animation: show .4s both;
+  }
+
+  @keyframes show {
+  	0%   { opacity: 0; }
+  	100% { opacity:.4; }
+  }
+
+  &_siteCaption {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: serif;
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    font-size: 23px;
+    letter-spacing: .2em;
+
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+
+  &_siteLogo {
+    width: 90%;
+    display: inline-block;
+    margin: -40px 0;
+    padding: 0 10px;
+    font-size: 5em;
+
+    svg {
+      width: 680px;
+      filter: drop-shadow(0 2px 3px rgba(0,0,0,0.1));
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 93%;
+      margin-top: 20px;
+
+      svg {
+        width: 80%;
+      }
+    }
+  }
+
+  &_date {
+    font-family: $font-family-cursive;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &_place {
+    margin-left: 20px;
+
+    @media (max-width: $screen-xs-max) {
+      display: block;
+    }
+  }
+
+  &_signup {
+    margin: 40px auto 20px;
+
+    &_button {
+      padding: 10px 50px;
+      font-size: 14px;
+      font-weight: bold;
+      color: $brand-sub-text-color;
+      background-color: $brand-sub-color;
+      transition: all .1s ease-in-out;
+      border: 3px solid #fff;
+      border-radius: 22px;
+      box-shadow: 0 2px 3px rgba(0,0,0,.1);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+        background-color: darken($brand-sub-color, 10%);
+        text-decoration: none;
+      }
+    }
+  }
+
+  &_commingsoon {
+    margin-top: 10px;
+    font-family: $font-family-cursive;
+  }
+
+  &_subline {
+    font-size: 13px;
+  }
+
+}

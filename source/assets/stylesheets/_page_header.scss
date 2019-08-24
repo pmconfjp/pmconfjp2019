@@ -1,0 +1,20 @@
+.pageHeader {
+  position: relative;
+  min-height: 30px;
+
+  &_title {
+    font: {
+      size: 2em;
+      weight: normal;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 70px;
+    }
+  }
+
+  .breadcrumb {
+    background-color: transparent;
+    margin: 10px 0;
+  }
+}

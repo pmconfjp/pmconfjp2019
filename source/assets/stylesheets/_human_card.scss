@@ -1,0 +1,43 @@
+.humanCard {
+  flex: 1 0 auto;
+  display: flex;
+  width: 50%;
+  margin: {
+    top: 10px;
+    bottom: 32px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+
+  &_photo {
+    @include square(80px);
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 16px;
+  }
+
+  &_name {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+
+  &_org,
+  &_title {
+    font-size: .8em;
+    line-height: 1.5;
+  }
+
+
+  &_socialLinks {
+    font-size: 1em;
+    line-height: 1;
+    margin-top: 10px;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}

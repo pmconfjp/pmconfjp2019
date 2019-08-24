@@ -1,0 +1,35 @@
+.commonHeader {
+  position: fixed;
+  background-color: $brand-color;
+  height: $header-height;
+  width: 100%;
+  z-index: 2;
+  font-weight: bold;
+  text-shadow: 0 2px 3px rgba(0,0,0,.1);
+
+  &_siteLogo {
+    display: inline-block;
+    float: left;
+    color: #fff;
+    margin: 5px 0 0;
+    font: {
+      size: 1.4em;
+      family: $font-family-damion;
+      weight: normal;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin: 0 0 3px;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
+    vertical-align: middle;
+    height: auto;
+
+    &_siteLogo {
+      float: none;
+    }
+  }
+}

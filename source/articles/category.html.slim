@@ -1,0 +1,21 @@
+---
+blog: articles
+---
+
+- content_for(:title) do
+  - data.categories.select { |cat| cat.name == category }[0].ja
+- content_for(:description) do
+  = data.categories.select { |cat| cat.name == category }[0].ja
+  | カテゴリの記事一覧です。
+
+.container
+  .pageHeader
+    h1.pageHeader_title
+      = data.categories.select { |cat| cat.name == category }[0].ja
+    = partial 'shared/articles_navigation', locals: { current: category }
+  ul.list-unstyled.articleList
+    - blog(blog_controller.name).articles.select { |a| a.data[:category] == category }.each do |article|
+      li
+        article.articleList_article
+          h1.articleList_title = link_to article.title, article
+          time.articleList_time = article.date.strftime('%Y/%m/%d')

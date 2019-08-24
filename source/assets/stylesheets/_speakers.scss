@@ -1,0 +1,123 @@
+.speakers {
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_item {
+      text-align: center;
+      width: 25%;
+      margin-bottom: 30px;
+
+      @media (max-width: $screen-xs-max) {
+        width: 50%;
+      }
+    }
+
+    &_image {
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+
+      @media (max-width: $screen-sm-max) {
+        width: 140px;
+        height: 140px;
+      }
+    }
+
+    &_name {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    &_organization {
+      margin-top: 3px;
+      font-weight: bold;
+    }
+
+    &_title {
+      margin-top: 3px;
+      padding: 0 10px;
+    }
+
+    &_organization,
+    &_title {
+      color: #888;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  }
+
+  &_schedulelink {
+    margin-top: 40px;
+    text-align: center;
+
+    .btn {
+      background-color: $brand-sub-color;
+      color: $brand-sub-text-color;
+      transition: all .1s ease-in-out;
+      border: 3px solid #fff;
+      border-radius: 22px;
+      box-shadow: 0 2px 3px rgba(0,0,0,.1);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+        background-color: #d02525;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &_text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  &_timetable {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    &_item {
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      flex: 1 1 auto;
+      padding: 8px;
+      border-radius: 4px;
+      text-align: center;
+      margin-right: 20px;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 0 2px 3px rgba(0,0,0,.1);
+
+      @media (max-width: $screen-xs-max) {
+        margin-right: 0;
+      }
+
+      &:nth-child(1),
+      &:nth-child(11),
+      &:nth-child(6) { background-color: #3D348B }
+      &:nth-child(2),
+      &:nth-child(7) { background-color: #97CC04 }
+      &:nth-child(3),
+      &:nth-child(8) { background-color: #2D7DD2 }
+      &:nth-child(4),
+      &:nth-child(9) { background-color: #F45D01 }
+      &:nth-child(5),
+      &:nth-child(10) { background-color: #474647 }
+      &:nth-child(12) { background-color: $brand-color; color: $brand-sub-text-color;}
+
+      &:nth-child(1),
+      &:nth-child(12) { width: 100%; }
+
+      .fa { margin-right: 3px; }
+    }
+  }
+}

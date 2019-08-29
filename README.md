@@ -1,4 +1,4 @@
-# Product Manager Conference 2018 公式Webサイト
+# Product Manager Conference 2019 公式Webサイト
 
 ## ■1. デザイン・コンテンツの更新対象と仕組みについて
 
@@ -63,7 +63,7 @@ categoryに `eventreport` を指定すると、http://2018.sendaiitfes.org/artic
 2. Web画面上で、ソースコードの右上にある鉛筆アイコン（Edit this file）をクリック。
 3. Web画面上で、編集。
 4. Web画面上で、画面下部にあるCommit changesに、変更概要を記入し、「Commit changes」ボタンをクリック。
-5. 2分後ぐらいに、自動で本番環境に反映 https://travis-ci.org/fullvirtue/pmconfjp2018 を確認し、 `build` が `passed` になることを確認。もし `errored` になった場合は、画面下部に赤字でエラーになった箇所が表示されるので、エラー内容を確認し修正後、4.に戻る。
+5. 2分後ぐらいに、自動で本番環境に反映 https://travis-ci.org/fullvirtue/pmconfjp2019 を確認し、 `build` が `passed` になることを確認。もし `errored` になった場合は、画面下部に赤字でエラーになった箇所が表示されるので、エラー内容を確認し修正後、4.に戻る。
 6. 本番環境にアクセスして、表示内容を確認。
 
 ### 2-2. 更新方法 その2

@@ -19,6 +19,4 @@ before_install:
 script:
   - "bundle exec middleman build --verbose"
 after_success:
-  - echo TRAVIS_BRANCH=${TRAVIS_BRANCH}
-  - echo GH_TOKEN=${GH_TOKEN}
-  - '[ "$TRAVIS_BRANCH" == "dev" ] && [ $GH_TOKEN ] && bundle exec middleman deploy'
+  - '[ "$TRAVIS_BRANCH" == "dev" ] && [ $GH_TOKEN ] && "bundle exec middleman deploy"'

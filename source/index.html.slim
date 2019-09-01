@@ -2,7 +2,7 @@
   .containers.largeHeaderContainer
     nav.largeHeaderNavigation
       p.largeHeader_siteCaption
-        | 愛されるプロダクトを創ろう
+        | 全ての企業にプロダクトマネジメントを
       h1.largeHeader_siteLogo
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 507.948 198.883"><defs><style>.cls-1{fill:#fff;}</style></defs><title>pmconf 2019</title>
           <g>
@@ -110,17 +110,18 @@ section.section
 /           | タイムテーブルを見る
 /
 /
-/ section.section
-/   .container
-/     h2.section_title SPEAKERS
-/     .speakers
-/       .speakers_list
-/         - data.speakers.normals.each do |normals|
-/           .speakers_list_item
-/             = image_tag normals.profile_image_url, class: 'speakers_list_image'
-/             .speakers_list_name = normals.name
-/             .speakers_list_organization = normals.organization
-/             .speakers_list_title = normals.title
+
+section.section
+  .container
+    h2.section_title SPEAKERS
+    .speakers
+      .speakers_list
+        - data.speakers.normals.each do |normals|
+          .speakers_list_item
+            = image_tag normals.profile_image_url, class: 'speakers_list_image'
+            .speakers_list_name = normals.name
+            .speakers_list_organization = normals.organization
+            .speakers_list_title = normals.title
       / .speakers_schedulelink
       /   = link_to '/schedule', class: 'btn' do
       /     i.fa.fa-arrow-circle-right
@@ -250,7 +251,7 @@ section.section
       p
         | Designed by #{link_to 'htomine', 'https://github.com/htomine', target: '_blank'} from Increments Inc.
         br
-        | Hosted by #{link_to 'GitHub', 'https://github.com/pmconfjp/pmconfjp2018', target: '_blank'}
+        | Hosted by #{link_to 'GitHub', 'https://github.com/pmconfjp/pmconfjp2019', target: '_blank'}
     .socialBtns
       .socialBtns_facebook
         <div class="fb-like" data-href="http://pmconf.jp/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>

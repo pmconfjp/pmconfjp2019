@@ -27,12 +27,11 @@
 
   &_siteCaption {
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 0;
-    font-family: serif;
     font-weight: bold;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .4);
-    font-size: 23px;
+    font-size: 22px;
     letter-spacing: .2em;
 
     @media (max-width: $screen-xs-max) {
@@ -43,7 +42,7 @@
   &_siteLogo {
     width: 90%;
     display: inline-block;
-    margin: -40px 0;
+    margin: -10px 0;
     padding: 0 10px;
     font-size: 5em;
 

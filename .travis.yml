@@ -11,12 +11,12 @@ env:
   - GIT_COMMITTER_EMAIL='fullvirtue@gmail.com'
   - GIT_AUTHOR_NAME='fullvirtue@travis-ci'
   - GIT_AUTHOR_EMAIL='fullvirtue@gmail.com'
-  - secure: Y6NIaDx9NvC5Kq1IXNnKLSMAYhB2v40EtvOXu4kqHpknXG8hoV6de+2GrJgtntPO7zbqDV3HnjmrsdoYm9VXOKFB1tdFi+/tjeJtz44E11xtZXXEQ7tqFKWFoVXvBSaSVjzfNcu5grflHWm5T6515dyqQ0VGaxdSFhpJB3FuIsIIS6qWMslXAgM6Vb84Fun8NgXyVrIYJKVI8ygZSqDg4KiL4zrSZ4POeYHquzQMzbJZTb/wDCrfXuhzdFaWpAzhoqwhmYS7ub+Gqy7mK3pqqgY1mo2YGYy2FBqvc74ZrB7Mel3LN7Uae8FuCl8GGbqXFiJAQ1to62CSPMlFnr87TJ3f0Gn1pT7f29Mu4Mkd7c5T0ahgBJdS7c+wUOwquAlFO89v/zn53RcGX721LPxumK31VflVPvE6JbvESu+gVD+42gghJ/cAeMG2UU/Ad2yX3wDINOgHi/1go9ZKIKk2GbqO12lY8/m7/km8AZIKO/fr89mKaDkG/rNfOZyzR/zDfd/aUP7aO6tl7rIeKFMlaE+poskCIxSMVfRwtUlkOgSZIcYdz1BtHFJzA9BOXOtOhdLS+Ayc6Qg1udQB6lWRP5V6z4enINX6kBvWJ0719dAsLKjrwROzFb2/GQwPBlyMM+8j318LllfpRy1f3ViGI7Aw80Gm8dZksHJEd53LUeQ=
   - TRAVIS_NODE_VERSION="6.1"
+  - secure: WQjBFk5r7aT7zjsro6HFy2Zhre3RFZgzNI8rhbZTivegxafVydvI/PAxW5Ahq6z+golhp5d6BqD4NnO/OzqjzwGVXQ2QumE20kpRxbgmqRzTUSTm6f9a93vSV/V/2Jxttc0cjaiNRymSp4k2Ev+5yRsjPw3UoX35+fLRt4FOrtzGtuIcwCO7Z/BOC1Ob2/OKQlkgW7yAOZ0McwSZcIcMAZiokNv5Yv+5C756PEuTvsVA8duhIVSbhuyvz1N+6UuYFrga+bsCKnoKTvPmQOD2ZDdsNAEjUjLItKzykTHJfNfmcfFJEmEZ9fVuZPosYLa8j47k0eutu7Uzh+SOI+QfUkmL24i2D2ceOoGifEZrPI5chH4CsoF+kJH1x0UUfZPd92HOIZtoU+iFnDNVY5lrIEgzwe4o8Qnsjo/HgIwdMKWGWGmduXjg9cOGiczRjXvUsu+rXmwWWSQhf11dE4JrlUH0n2dn2DDnc9NJ36DHIe64yhej/uWGd7fO3R7jE8fXQ+2xZzfAjnzXgYoIb96LcXif+3FC5+33K6xEKFa/SqczjlbcLjvepHS2MVYOEeI/XX9AOarz2+tyHJaba9EMo0a6ChuFzeEbWQz7txGLRssSZ4H0QXqN6TBA66t2c+FNEs5vUriFRTiwQ8YJwkrqkfRaayKEGfyNdb+iMSuHgqg=
 before_install:
-  - "rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION"
-  - "npm install"
+- rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
+- npm install
 script:
-  - "bundle exec middleman build --verbose"
+- bundle exec middleman build --verbose
 after_success:
-  - '[ "$TRAVIS_BRANCH" == "dev" ] && [ $GH_TOKEN ] && bundle exec middleman deploy --verbose'
+- '[ "$TRAVIS_BRANCH" == "dev" ] && [ $GH_TOKEN ] && bundle exec middleman deploy --verbose'

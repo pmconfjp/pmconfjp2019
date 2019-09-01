@@ -1,32 +1,55 @@
 platinas:
-  - name: pmconf
-    url: "https://linecorp.com"
-    logo_image_url: /assets/images/pmconf_ico.png
+  - name: LINE株式会社
+    url: "https://linecorp.com/ja/"
+    logo_image_url: /assets/images/sponsors/platina/line.png
+  - name: 株式会社メルカリ
+    url: "https://about.mercari.com/"
+    logo_image_url: /assets/images/sponsors/platina/mercari.png
+  - name: 株式会社メルペイ
+    url: "https://about.mercari.com/"
+    logo_image_url: /assets/images/sponsors/platina/merpay.png
+  - name: 株式会社クライス＆カンパニー
+    url: "https://www.kandc.com/"
+    logo_image_url: /assets/images/sponsors/platina/kandc.jpg
 golds:
-  - name: pmconf
-    url: "https://linecorp.com"
-    logo_image_url: /assets/images/pmconf_ico.png
+  - name: freee株式会社
+    url: "https://www.freee.co.jp/"
+    logo_image_url: /assets/images/sponsors/gold/freee.png
+  - name: 株式会社ディー・エヌ・エー
+    url: "https://dena.com/"
+    logo_image_url: /assets/images/sponsors/gold/dena.png
+  - name: ピクシブ株式会社
+    url: "https://www.pixiv.co.jp/"
+    logo_image_url: /assets/images/sponsors/gold/pixiv.png
+  - name: 楽天株式会社
+    url: "https://corp.rakuten.co.jp/careers/"
+    logo_image_url: /assets/images/sponsors/gold/rakuten.png
 silvers:
-  - name: pmconf
-    url: "https://linecorp.com"
-    logo_image_url: /assets/images/pmconf_ico.png
-
+  - name: 株式会社エウレカ
+    url: "https://eure.jp"
+    logo_image_url: /assets/images/sponsors/silver/eureka.png
+bronze:
+  - name: ルームクリップ株式会社
+    url: "https://roomclip.jp/"
+    logo_image_url: /assets/images/sponsors/bronze/roomclip.png
+#  - name: ディップ株式会社
+#    url: "https://roomclip.jp/"
+#    logo_image_url: /assets/images/pmconf_ico.png
+#logo:
+#  - name: トランスファーワイズ・ジャパン株式会社
+#    url: "https://transferwise.com/jp"
+#    logo_image_url: 
 drinks:
-  - name: pmconf
-    url: "https://linecorp.com"
-    logo_image_url: /assets/images/pmconf_ico.png
+  - name: BASE株式会社
+    url: "http://thebase.in/"
+    logo_image_url: /assets/images/sponsors/drink/base.png
 
-medias:
-  - name: pmconf
-    url: "https://linecorp.com"
-    logo_image_url: /assets/images/pmconf_ico.png
+#medias:
+#  - name: pmconf
+#    url: "https://linecorp.com"
+#    logo_image_url: /assets/images/pmconf_ico.png
 
-communities:
-  - name: pmconf
-    url: "https://linecorp.com"
-    logo_image_url: /assets/images/pmconf_ico.png
-
-personals:
-  - name: pmconf
-    url: "https://linecorp.com"
-    logo_image_url: /assets/images/pmconf_ico.png
+#communities:
+#  - name: pmconf
+#    url: "https://linecorp.com"
+#    logo_image_url: /assets/images/pmconf_ico.png

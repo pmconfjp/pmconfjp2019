@@ -24,14 +24,14 @@ golds:
   - name: 楽天株式会社
     url: "https://corp.rakuten.co.jp/careers/"
     logo_image_url: /assets/images/sponsors/gold/rakuten.png
-silvers:
-  - name: 株式会社エウレカ
-    url: "https://eure.jp"
-    logo_image_url: /assets/images/sponsors/silver/eureka.png
-bronze:
-  - name: ルームクリップ株式会社
-    url: "https://roomclip.jp/"
-    logo_image_url: /assets/images/sponsors/bronze/roomclip.png
+#silvers:
+#  - name: 株式会社エウレカ
+#    url: "https://eure.jp"
+#    logo_image_url: /assets/images/sponsors/silver/eureka.png
+#bronze:
+#  - name: ルームクリップ株式会社
+#    url: "https://roomclip.jp/"
+#    logo_image_url: /assets/images/sponsors/bronze/roomclip.png
 #  - name: ディップ株式会社
 #    url: "https://roomclip.jp/"
 #    logo_image_url: /assets/images/pmconf_ico.png
@@ -39,10 +39,10 @@ bronze:
 #  - name: トランスファーワイズ・ジャパン株式会社
 #    url: "https://transferwise.com/jp"
 #    logo_image_url: 
-drinks:
-  - name: BASE株式会社
-    url: "http://thebase.in/"
-    logo_image_url: /assets/images/sponsors/drink/base.png
+#drinks:
+#  - name: BASE株式会社
+#    url: "http://thebase.in/"
+#    logo_image_url: /assets/images/sponsors/drink/base.png
 
 #medias:
 #  - name: pmconf

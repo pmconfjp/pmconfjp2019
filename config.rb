@@ -94,6 +94,8 @@ helpers do
     data.sponsors.platinas.each { |sp| arr << sp }
     data.sponsors.golds.each { |sg| arr << sg }
     data.sponsors.sivers.each { |ss| arr << ss }
+    data.sponsors.bronze.each { |sb| arr << sb }
+    data.sponsors.logo.each { |sl| arr << sl }
     data.sponsors.drinks.each { |sd| arr << sd }
     data.sponsors.communities.each { |sc| arr << sc }
     data.sponsors.personals.each { |ps| arr << ps }

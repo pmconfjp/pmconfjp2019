@@ -6,29 +6,29 @@
 
 以下のフォルダ内の各ファイルを編集することで、実施できます。
 
-`\pmconfjp2018\source\assets\images`
+`\pmconfjp2019\source\assets\images`
 
-`\pmconfjp2018\source\assets\stylesheets`
+`\pmconfjp2019\source\assets\stylesheets`
 
-`\pmconfjp2018\source\assets\javascripts`
+`\pmconfjp2019\source\assets\javascripts`
 
 ### 1-2. コンテンツレイアウトおよび本文の変更
 
 以下のフォルダ内の `.slim` 拡張子のファイルを編集することで、実施できます。
 
-`\pmconfjp2018\source`
+`\pmconfjp2019\source`
 
 ### 1-3. コンテンツ内に埋め込んだデータ
 
 以下のフォルダ内の `.yml` 拡張子のファイルを編集することで、実施できます。
 
-`\pmconfjp2018\data`
+`\pmconfjp2019\data`
 
 ### 1-4. コンテンツ内に埋め込んだ記事の追加・更新
 
 記事のファイル名フォーマットは、`YYYY-MM-DD-TITLE.html.md` となっています。
 
-例) `2018-11-10-first-post.html.md`
+例) `2019-11-12-first-post.html.md`
 
 このファイル内では、以下のフォーマットに沿って記述する必要があります。  
 
@@ -36,13 +36,13 @@
 
 [記事ファイル内のフォーマット](https://github.com/htomine/pmconf/blob/master/article_template.erb)
 
-categoryに `eventreport` を指定すると、http://2018.sendaiitfes.org/articles/categories/eventreport.html に記事が表示されます。
+categoryに `eventreport` を指定すると、http://2019.sendaiitfes.org/articles/categories/eventreport.html に記事が表示されます。
 
 ### 1-5.  Tipsの追加・更新
 
 以下のフォルダ内の各ファイルを編集することで、実施できます。
 
-`\pmconfjp2018\source\tips`
+`\pmconfjp2019\source\tips`
 
 ファイル名は `TITLE.html.md` というフォーマットである必要があります。  
 
@@ -84,7 +84,7 @@ Windows環境、Mac環境ともに、以下の手順となります。
 2. 任意のテキストエディタを開き、編集したい箇所を特定。
 3. 任意のテキストエディタ上で、編集し、保存。
 4. SourceTree上で、`commit` & `push`。
-5. 2分後ぐらいに、自動で本番環境に反映 https://travis-ci.org/fullvirtue/pmconfjp2018 を確認し、 `build` が `passed` になることを確認。もし `errored` になった場合は、画面下部に赤字でエラーになった箇所が表示されるので、エラー内容を確認し修正後、保存し、4.に戻る。
+5. 2分後ぐらいに、自動で本番環境に反映 https://travis-ci.org/fullvirtue/pmconfjp2019 を確認し、 `build` が `passed` になることを確認。もし `errored` になった場合は、画面下部に赤字でエラーになった箇所が表示されるので、エラー内容を確認し修正後、保存し、4.に戻る。
 6. 本番環境にアクセスして、表示内容を確認。
 
 ### 2-3. 更新方法 その3
@@ -121,7 +121,7 @@ Homebrewをインストールする。
 
 ##### 2-3-A-b) rbenv のインストール
 
-（20180908-riku編集 ざっくり書いてます）
+（20190908-riku編集 ざっくり書いてます）
 
 こちら参考にお願いします
 http://qiita.com/issobero/items/e0443b79da117ed48294
@@ -130,7 +130,7 @@ http://qiita.com/issobero/items/e0443b79da117ed48294
 
 2-2を参考にローカル環境に本リポジトリをクローン
 
-ルートディレクトリ（/pmconfjp2018）で以下のコマンドを実行
+ルートディレクトリ（/pmconfjp2019）で以下のコマンドを実行
 
 ```■最初の1回目
 
@@ -153,7 +153,7 @@ bundle exec middleman build --verbose
 bundle exec middleman deploy
 ``` 
 
-/pmconfjp2018/build の中にサイトができてるはず。
+/pmconfjp2019/build の中にサイトができてるはず。
 
 上記コマンドの
 `bundle exec middleman build --verbose`

@@ -82,6 +82,12 @@ helpers do
     arr
   end
 
+  def keynotes
+    arr = []
+    data.keynote.keynotes.each { |keynote| arr << keynote }
+    arr
+  end
+
 # rubocop:disable all
   def speakers
     arr = []

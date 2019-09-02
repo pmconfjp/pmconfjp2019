@@ -113,15 +113,29 @@ section.section
 
 section.section
   .container
-    h2.section_title SPEAKERS
-    .speakers
-      .speakers_list
-        - data.speakers.normals.each do |normals|
-          .speakers_list_item
-            = image_tag normals.profile_image_url, class: 'speakers_list_image'
-            .speakers_list_name = normals.name
-            .speakers_list_organization = normals.organization
-            .speakers_list_title = normals.title
+    h2.section_title KEYNOTE SPEAKER
+    - if data.keynote.keynotes.present?
+    .keynotes
+      .keynotes_list
+        - data.keynote.keynotes.each do |keynote|
+          .keynotes_list_item
+            = image_tag keynote.profile_image_url, class: 'keynotes_list_image'
+            .keynotes_list_name = keynote.name
+            .keynotes_list_organization = keynote.organization
+            .keynotes_list_title = keynote.title
+
+/ section.section
+/   .container
+/     h2.section_title SPEAKERS
+/     - if data.speakers.normals.present?
+/     .speakers
+/       .speakers_list
+/         - data.speakers.normals.each do |normals|
+/           .speakers_list_item
+/             = image_tag normals.profile_image_url, class: 'speakers_list_image'
+/             .speakers_list_name = normals.name
+/             .speakers_list_organization = normals.organization
+/             .speakers_list_title = normals.title
       / .speakers_schedulelink
       /   = link_to '/schedule', class: 'btn' do
       /     i.fa.fa-arrow-circle-right

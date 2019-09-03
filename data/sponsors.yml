@@ -3,11 +3,10 @@ platinas:
     url: "https://linecorp.com/ja/"
     logo_image_url: /assets/images/sponsors/platina/line.png
   - name: 株式会社メルカリ
+    name2: 株式会社メルペイ
     url: "https://about.mercari.com/"
-    logo_image_url: /assets/images/sponsors/platina/mercari.png
-  - name: 株式会社メルペイ
-    url: "https://about.mercari.com/"
-    logo_image_url: /assets/images/sponsors/platina/merpay.png
+    url2: "https://jp.merpay.com/" 
+    logo_image_url: /assets/images/sponsors/platina/mercari-merpay.png
   - name: 株式会社クライス＆カンパニー
     url: "https://www.kandc.com/"
     logo_image_url: /assets/images/sponsors/platina/kandc.jpg

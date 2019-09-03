@@ -164,7 +164,10 @@ section.section
       h3.sponsors_title PLATINUM SPONSORS
       .sponsors_list
         - data.sponsors.platinas.each do |platinas|
-          = link_to image_tag(platinas.logo_image_url), platinas.url, class: 'sponsors_list_item-platinas', target: '_blank', title: platinas.name, 'data-toggle' => 'tooltip'
+          - if platinas.name == '株式会社メルカリ'
+            = '<img class="sponsors_list_item-platinas" src="' + platinas.logo_image_url + '" usemap="#mer" data-toggle="tooltip"/><map name="mer"><area target="_blank" style="border: none; outline: none;" shape="rect" coords="0,0,260,130" href="' + platinas.url + '" alt="' + platinas.name + '"><area target="_blank" style="border: none; outline: none;" shape="rect" coords="0,130,260,260" href="' + platinas.url2 + '" alt="' + platinas.name2 + '"></map>'
+          - else
+            = link_to image_tag(platinas.logo_image_url), platinas.url, class: 'sponsors_list_item-platinas', target: '_blank', title: platinas.name, 'data-toggle' => 'tooltip'
 
     - if data.sponsors.golds.present?
       h3.sponsors_title GOLD SPONSORS

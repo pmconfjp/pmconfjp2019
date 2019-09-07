@@ -42,7 +42,6 @@ pmconfjp2019/data
     - staff(実行委員)
     - job(スポンサー求人情報)
 
-
 ### コンテンツ内に埋め込んだ記事の追加・更新
 
 - 記事のファイル名フォーマットは、`YYYY-MM-DD-TITLE.html.md` となっています。
@@ -66,22 +65,27 @@ pmconfjp2019/source/tips
 - ファイル内では以下のフォーマットに沿って記述する必要があります。  
 - [記事ファイル内のフォーマット](https://github.com/htomine/pmconf/blob/master/tips_template.erb)
 
+
 ## ローカル環境の設定
 
-### インストール
-- rbenv
-    - 2.3.1を利用するのでそれが使えればなんでも良い
+### ローカル環境の前提条件
+- Ruby 2.3.1
+	- rbenv を利用して導入するのを推奨
     - 参考URL) http://qiita.com/issobero/items/e0443b79da117ed48294
-- nodenv
-    - npm installできればなんでも良い
+	- `bundler` をインストールしておく
+- node
+	- nvm  や nodenv などを利用して導入するのがよい
+    - npm install できればなんでも良い
 
-### 実行に必要な設定
-- rubyの設定を過去にしたことがない場合は `bundler` がインストールされていないので対応
-- バージョンの不整合が起きているとエラーがでる
+### ローカルで初期設定
+
+リポジトリにディレクトリ直下で以下を実施
 
 ```
-gem install bundler
 bundle install
+npm install
+gem install middleman
+gem install rake -v 11.3.0
 ```
 
 ### ローカルで起動する

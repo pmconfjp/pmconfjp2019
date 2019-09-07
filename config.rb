@@ -61,7 +61,7 @@ helpers do
     elsif yield_content(:description)
       yield_content(:description)
     else
-      'プロダクトマネージャーカンファレンス 2019 - 全ての企業にプロダクトマネジメントを'
+      'プロダクトマネージャーカンファレンス 2019 - すべての企業にプロダクトマネジメントを'
     end
   end
 

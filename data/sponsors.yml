@@ -10,6 +10,9 @@ platinas:
   - name: 株式会社クライス＆カンパニー
     url: "https://www.kandc.com/"
     logo_image_url: /assets/images/sponsors/platina/kandc.jpg
+  - name: 株式会社プレイド
+    url: "https://plaid.co.jp/"
+    logo_image_url: /assets/images/sponsors/platina/plaid.png
 golds:
   - name: freee株式会社
     url: "https://www.freee.co.jp/"
@@ -23,6 +26,12 @@ golds:
   - name: 楽天株式会社
     url: "https://corp.rakuten.co.jp/careers/"
     logo_image_url: /assets/images/sponsors/gold/rakuten.png
+  - name: エン・ジャパン株式会社
+    url: "https://corp.en-japan.com/"
+    logo_image_url: /assets/images/sponsors/gold/enjapan.png
+  - name: ラクスル株式会社
+    url: "https://corp.raksul.com/"
+    logo_image_url: /assets/images/sponsors/gold/raksul.png
 #silvers:
 #  - name: 株式会社エウレカ
 #    url: "https://eure.jp"

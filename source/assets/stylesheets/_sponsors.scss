@@ -30,7 +30,7 @@
         @extend .sponsors_list_item;
         width: 260px;
         height: 260px;
-        padding: 20px
+        padding: 20px;
       }
 
       &-golds {
@@ -38,13 +38,6 @@
         width: 220px;
         height: 220px;
         padding: 20px;
-      }
-
-      &-booths {
-        @extend .sponsors_list_item;
-        width: 200px;
-        height: 200px;
-        padding: 15px;
       }
 
       &-goods {
@@ -57,6 +50,12 @@
         @extend .sponsors_list_item;
         width: 160px;
         height: 160px;
+      }
+
+      &-bronze {
+        @extend .sponsors_list_item;
+        width: 150px;
+        height: 150px;
       }
 
       &-logos {

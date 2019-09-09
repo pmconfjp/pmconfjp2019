@@ -2,7 +2,7 @@
   .containers.largeHeaderContainer
     nav.largeHeaderNavigation
       p.largeHeader_siteCaption
-        | 全ての企業にプロダクトマネジメントを
+        | すべての企業にプロダクトマネジメントを
       h1.largeHeader_siteLogo
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 507.948 198.883"><defs><style>.cls-1{fill:#fff;}</style></defs><title>pmconf 2019</title>
           <g>
@@ -23,11 +23,11 @@
 /         | 参加申込み
 section.section
   .container
-    h2.section_title プロダクトマネージャー・カンファレンス とは
+    h2.section_title プロダクトマネージャーカンファレンス とは
     p
-      | 日本におけるプロダクトマネジメントに関わる人やそれを目指す人が集う機会を設けるため、本年も、プロダクトマネージャー・カンファレンスを開催する運びとなりました。
+      | 日本におけるプロダクトマネジメントに関わる人やそれを目指す人が集う機会を設けるため、本年も、プロダクトマネージャーカンファレンスを開催する運びとなりました。
     p
-      | プロダクトマネージャーという職種の認知を高め、プロダクトマネジメント業務に携わる人々が情報や意見を交換することで共に学ぶ場を持つことが、創造性や先進性に富んだものづくりを行うには重要です。その場を提供するべく、プロダクトマネージャー・カンファレンスは企画されています。
+      | プロダクトマネージャーという職種の認知を高め、プロダクトマネジメント業務に携わる人々が情報や意見を交換することで共に学ぶ場を持つことが、創造性や先進性に富んだものづくりを行うには重要です。その場を提供するべく、プロダクトマネージャーカンファレンスは企画されています。
 
 section.section
   .container
@@ -113,15 +113,29 @@ section.section
 
 section.section
   .container
-    h2.section_title SPEAKERS
-    .speakers
-      .speakers_list
-        - data.speakers.normals.each do |normals|
-          .speakers_list_item
-            = image_tag normals.profile_image_url, class: 'speakers_list_image'
-            .speakers_list_name = normals.name
-            .speakers_list_organization = normals.organization
-            .speakers_list_title = normals.title
+    h2.section_title KEYNOTE SPEAKER
+    - if data.keynote.keynotes.present?
+    .keynotes
+      .keynotes_list
+        - data.keynote.keynotes.each do |keynote|
+          .keynotes_list_item
+            = image_tag keynote.profile_image_url, class: 'keynotes_list_image'
+            .keynotes_list_name = keynote.name
+            .keynotes_list_organization = keynote.organization
+            .keynotes_list_title = keynote.title
+
+/ section.section
+/   .container
+/     h2.section_title SPEAKERS
+/     - if data.speakers.normals.present?
+/     .speakers
+/       .speakers_list
+/         - data.speakers.normals.each do |normals|
+/           .speakers_list_item
+/             = image_tag normals.profile_image_url, class: 'speakers_list_image'
+/             .speakers_list_name = normals.name
+/             .speakers_list_organization = normals.organization
+/             .speakers_list_title = normals.title
       / .speakers_schedulelink
       /   = link_to '/schedule', class: 'btn' do
       /     i.fa.fa-arrow-circle-right
@@ -146,49 +160,81 @@ section.section
 section.section
   .container
     h2.section_title OUR SPONSORS
+    - if data.sponsors.platinas.present?
+      h3.sponsors_title PLATINUM SPONSORS
+      .sponsors_list
+        - data.sponsors.platinas.each do |platinas|
+          - if platinas.name == '株式会社メルカリ'
+            = '<img class="sponsors_list_item-platinas" src="' + platinas.logo_image_url + '" usemap="#mer" data-toggle="tooltip"/><map name="mer"><area target="_blank" style="border: none; outline: none;" shape="rect" coords="0,0,260,130" href="' + platinas.url + '" alt="' + platinas.name + '"><area target="_blank" style="border: none; outline: none;" shape="rect" coords="0,130,260,260" href="' + platinas.url2 + '" alt="' + platinas.name2 + '"></map>'
+          - else
+            = link_to image_tag(platinas.logo_image_url), platinas.url, class: 'sponsors_list_item-platinas', target: '_blank', title: platinas.name, 'data-toggle' => 'tooltip'
+
+    - if data.sponsors.golds.present?
+      h3.sponsors_title GOLD SPONSORS
+      .sponsors_list
+        - data.sponsors.golds.each do |golds|
+          = link_to image_tag(golds.logo_image_url), golds.url, class: 'sponsors_list_item-golds', target: '_blank', title: golds.name, 'data-toggle' => 'tooltip'
+
+    - if data.sponsors.silvers.present?
+      h3.sponsors_title SILVER SPONSORS
+      .sponsors_list
+        - data.sponsors.silvers.each do |silvers|
+          = link_to image_tag(silvers.logo_image_url), silvers.url, class: 'sponsors_list_item-silvers', target: '_blank', title: silvers.name, 'data-toggle' => 'tooltip'
+    - else
+      h3.sponsors_title SILVER SPONSORS
+      .sponsors_list
+        = 'To be announced'
+
+    - if data.sponsors.bronze.present?
+      h3.sponsors_title BRONZE SPONSORS
+      .sponsors_list
+        - data.sponsors.bronze.each do |bronze|
+          = link_to image_tag(bronze.logo_image_url), bronze.url, class: 'sponsors_list_item-bronze', target: '_blank', title: bronze.name, 'data-toggle' => 'tooltip'
+    - else
+      h3.sponsors_title BRONZE SPONSORS
+      .sponsors_list
+        = 'To be announced'
+
+    - if data.sponsors.logo.present?
+      h3.sponsors_title LOGO SPONSORS
+      .sponsors_list
+        - data.sponsors.logo.each do |logo|
+          = link_to image_tag(logo.logo_image_url), logo.url, class: 'sponsors_list_item-logos', target: '_blank', title: logo.name, 'data-toggle' => 'tooltip'
+    - else
+      h3.sponsors_title LOGO SPONSORS
+      .sponsors_list
+        = 'To be announced'
+
+    - if data.sponsors.drinks.present?
+      h3.sponsors_title DRINK SPONSORS
+      .sponsors_list
+       - data.sponsors.drinks.each do |drinks|
+         = link_to image_tag(drinks.logo_image_url), drinks.url, class: 'sponsors_list_item-drinks', target: '_blank', title: drinks.name, 'data-toggle' => 'tooltip'
+    - else
+      h3.sponsors_title DRINK SPONSORS
+      .sponsors_list
+        = 'To be announced'
+
     .sponsors_description
       h4. スポンサーについて
-      p プロダクトマネージャー・カンファレンス 2019 では、本カンファレンスにご協賛いただけるスポンサー企業を募集しております。プロダクト開発の現場で活躍するプロダクトマネージャーに、自社をアピールできるまたとない機会です。協賛プログラムの詳細については、以下の資料をご参照ください。皆様のご支援をお待ちしております。
+      p プロダクトマネージャーカンファレンス 2019 では、本カンファレンスにご協賛いただけるスポンサー企業を募集しております。プロダクト開発の現場で活躍するプロダクトマネージャーに、自社をアピールできるまたとない機会です。協賛プログラムの詳細については、以下の資料をご参照ください。皆様のご支援をお待ちしております。
       = link_to '/assets/files/pmconfjp_sponsorship_letter_2019.pdf', target: '_blank', rel: 'nofollow'
         i.fa.fa-file-pdf-o
         | &nbsp;
-        | プロダクトマネージャー・カンファレンス 2019 ご協賛のお願い
+        | プロダクトマネージャーカンファレンス 2019 ご協賛のお願い
+      br
+      = link_to '/assets/files/pmconfjp_sponsorship_letter_2019_summary.pdf', target: '_blank', rel: 'nofollow'
+        i.fa.fa-file-pdf-o
+        | &nbsp;
+        | プロダクトマネージャーカンファレンス 2019 ご協賛のお願い 補助資料
+    
 
-/     - if data.sponsors.platinas.present?
-/       h3.sponsors_title 💎 PLATINUM SPONSORS
-/       .sponsors_list
-/         - data.sponsors.platinas.each do |platinas|
-/           = link_to image_tag(platinas.logo_image_url), platinas.url, class: 'sponsors_list_item-platinas', target: '_blank', title: platinas.name, 'data-toggle' => 'tooltip'
-/     - if data.sponsors.golds.present?
-/       h3.sponsors_title 🏅 GOLD SPONSORS
-/       .sponsors_list
-/         - data.sponsors.golds.each do |golds|
-/           = link_to image_tag(golds.logo_image_url), golds.url, class: 'sponsors_list_item-golds', target: '_blank', title: golds.name, 'data-toggle' => 'tooltip'
-/     - if data.sponsors.booths.present?
-/       h3.sponsors_title BOOTH SPONSORS
-/       .sponsors_list
-/         - data.sponsors.booths.each do |booths|
-/           = link_to image_tag(booths.logo_image_url), booths.url, class: 'sponsors_list_item-booths', target: '_blank', title: booths.name, 'data-toggle' => 'tooltip'
-/     - if data.sponsors.silvers.present?
-/       h3.sponsors_title 💍 SILVER SPONSORS
-/       .sponsors_list
-/         - data.sponsors.silvers.each do |silvers|
-/           = link_to image_tag(silvers.logo_image_url), silvers.url, class: 'sponsors_list_item-silvers', target: '_blank', title: silvers.name, 'data-toggle' => 'tooltip'
 /     - if data.sponsors.goods.present?
 /       h3.sponsors_title 👕 T-SHIRTS SPONSOR
 /       .sponsors_list
 /         - data.sponsors.goods.each do |goods|
 /           = link_to image_tag(goods.logo_image_url), goods.url, class: 'sponsors_list_item-goods', target: '_blank', title: goods.name, 'data-toggle' => 'tooltip'
-/     - if data.sponsors.logos.present?
-/       h3.sponsors_title LOGO SPONSORS
-/       .sponsors_list
-/         - data.sponsors.logos.each do |logos|
-/           = link_to image_tag(logos.logo_image_url), logos.url, class: 'sponsors_list_item-logos', target: '_blank', title: logos.name, 'data-toggle' => 'tooltip'
-/     - if data.sponsors.drinks.present?
-/       h3.sponsors_title 🥤 DRINK SPONSORS
-/       .sponsors_list
-/        - data.sponsors.drinks.each do |drinks|
-/          = link_to image_tag(drinks.logo_image_url), drinks.url, class: 'sponsors_list_item-drinks', target: '_blank', title: drinks.name, 'data-toggle' => 'tooltip'
+
 /     - if data.sponsors.medias.present?
 /       h3.sponsors_title 📷 MEDIA SPONSORS
 /       .sponsors_list
@@ -237,19 +283,19 @@ section.section.hidden-xs
 section.section
   .container
     h2.section_title 😎 主催
-    h4.text-center プロダクトマネージャー・カンファレンス 実行委員会
+    h4.text-center プロダクトマネージャーカンファレンス 実行委員会
     p.text-center
       = link_to '実行委員一覧', '/staff'
     .sponsorsText
       h4.text-center お問い合わせ先
       p
-        | プロダクトマネージャー・カンファレンス 運営事務局
+        | プロダクトマネージャーカンファレンス 運営事務局
         br
         i.fa.fa-envelope-o
         =< link_to 'info@pmconf.jp', 'mailto:info@pmconf.jp', target: '_blank'
     .sponsorsText
       p
-        | Designed by #{link_to 'htomine', 'https://github.com/htomine', target: '_blank'} from Increments Inc.
+        | Designed by #{link_to 'htomine', 'https://github.com/htomine', target: '_blank'} from cluster Inc.
         br
         | Hosted by #{link_to 'GitHub', 'https://github.com/pmconfjp/pmconfjp2019', target: '_blank'}
     .socialBtns

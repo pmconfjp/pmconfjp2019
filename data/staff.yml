@@ -1,43 +1,50 @@
 organizers:
-  - name: 関 満徳 (実行委員長)
-    organization: グロースエクスパートナーズ株式会社
-    title: ITアーキテクト
-    twitter: https://twitter.com/fullvirtue
-    github: https://github.com/fullvirtue
-    facebook: https://facebook.com/fullvirtue
-    link: http://fullvirtue.com/
-    profile_image_url: /assets/images/profile_images/fullvirtue.png
   - name: 及川 卓也
-    organization: フリーランス
+    organization: Tably株式会社
+    title: 代表取締役 Technology Enabler
     twitter: https://twitter.com/takoratta
     github: https://github.com/takoratta
     facebook: https://facebook.com/takoratta
     link: http://takoratta.hatenablog.com/
     profile_image_url: /assets/images/profile_images/takoratta.jpeg
+  - name: 関 満徳
+    organization: グロース・アーキテクチャ＆チームス株式会社
+    title: プロダクトオーナー支援スペシャリスト
+    twitter: https://twitter.com/fullvirtue
+    github: https://github.com/fullvirtue
+    facebook: https://facebook.com/fullvirtue
+    link: http://fullvirtue.com/
+    profile_image_url: /assets/images/profile_images/fullvirtue.png
   - name: 田中 正巳
-    organization: 株式会社サイバーエージェント
-    title: AIRTRACK 開発責任者
+    organization: 株式会社ビズリーチ
+    title: スクラムマスター
     twitter: https://twitter.com/b_marsa
     github: https://github.com/b-marsa
     facebook: https://www.facebook.com/ysl882orbmarsa
     profile_image_url: /assets/images/profile_images/MasamiTanaka.jpg
   - name: 丹野 瑞紀
-    organization: 
+    organization: 株式会社メルペイ
+    title: プロダクトマネージャー
     twitter: https://twitter.com/mizukitanno
     github: https://github.com/mizukitanno
     facebook: https://facebook.com/mizukitanno
     link: http://tannomizuki.hatenablog.com/
     profile_image_url: /assets/images/profile_images/mizukitanno.png
   - name: 東峰 裕之
-    organization: Increments株式会社
-    title: プロダクトマネージャー
+    organization: クラスター株式会社
+    title: デザイナー
     twitter: https://twitter.com/htomine
     github: https://github.com/htomine
     facebook: https://facebook.com/htomine
     link: http://htomine.hateblo.jp/
     profile_image_url: /assets/images/profile_images/htomine.png
+  - name: 鳴釜 優子
+    organization: パーソルイノベーション株式会社
+    title: プロデューサー
+    profile_image_url: /assets/images/pmconf_ico.png
   - name: 三浦 伸明
-    organization: 株式会社サイバーエージェント
+    organization: 笑屋株式会社
+    title: VPoE
     twitter: https://twitter.com/miuranobuak
     github: https://github.com/miuranobuaki
     facebook: https://www.facebook.com/nobuaki.miura

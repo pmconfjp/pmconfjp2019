@@ -47,11 +47,11 @@ page 'sitemap.xml', layout: 'xml_layout'
 helpers do
   def page_title
     if current_page.data.title
-      "#{current_page.data.title} | プロダクトマネージャー・カンファレンス 2019"
+      "#{current_page.data.title} | プロダクトマネージャーカンファレンス 2019"
     elsif yield_content(:title)
-      "#{yield_content(:title)} | プロダクトマネージャー・カンファレンス 2019"
+      "#{yield_content(:title)} | プロダクトマネージャーカンファレンス 2019"
     else
-      'プロダクトマネージャー・カンファレンス 2019'
+      'プロダクトマネージャーカンファレンス 2019'
     end
   end
 
@@ -61,7 +61,7 @@ helpers do
     elsif yield_content(:description)
       yield_content(:description)
     else
-      'プロダクトマネージャー・カンファレンス 2019 - 愛されるプロダクトを創ろう'
+      'プロダクトマネージャーカンファレンス 2019 - すべての企業にプロダクトマネジメントを'
     end
   end
 
@@ -82,6 +82,12 @@ helpers do
     arr
   end
 
+  def keynotes
+    arr = []
+    data.keynote.keynotes.each { |keynote| arr << keynote }
+    arr
+  end
+
 # rubocop:disable all
   def speakers
     arr = []
@@ -94,6 +100,8 @@ helpers do
     data.sponsors.platinas.each { |sp| arr << sp }
     data.sponsors.golds.each { |sg| arr << sg }
     data.sponsors.sivers.each { |ss| arr << ss }
+    data.sponsors.bronze.each { |sb| arr << sb }
+    data.sponsors.logo.each { |sl| arr << sl }
     data.sponsors.drinks.each { |sd| arr << sd }
     data.sponsors.communities.each { |sc| arr << sc }
     data.sponsors.personals.each { |ps| arr << ps }

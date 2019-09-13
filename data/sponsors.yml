@@ -32,6 +32,10 @@ golds:
   - name: ラクスル株式会社
     url: "https://corp.raksul.com/"
     logo_image_url: /assets/images/sponsors/gold/raksul.png
+  - name: ウイングアーク1st株式会社
+    url: "https://www.wingarc.com/"
+    logo_image_url: /assets/images/sponsors/gold/WingArc1st.jpg
+    
 #silvers:
 #  - name: 株式会社エウレカ
 #    url: "https://eure.jp"

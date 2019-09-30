@@ -103,9 +103,12 @@ helpers do
     data.sponsors.bronze.each { |sb| arr << sb }
     data.sponsors.logo.each { |sl| arr << sl }
     data.sponsors.drinks.each { |sd| arr << sd }
-    data.sponsors.communities.each { |sc| arr << sc }
-    data.sponsors.personals.each { |ps| arr << ps }
     arr
+  end
+
+  def communities
+    arr = []
+    data.communities.each { |co| arr << co }
   end
 end
 # rubocop:enable all

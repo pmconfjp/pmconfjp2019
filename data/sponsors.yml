@@ -72,6 +72,9 @@ bronze:
   - name: NTTコミュニケーションズ株式会社　SpoLive
     url: https://spo.live/
     logo_image_url: /assets/images/sponsors/bronze/spolive.png
+  - name: コニカミノルタ株式会社
+    url: https://www.konicaminolta.com/jp-ja/index.html
+    logo_image_url: /assets/images/sponsors/bronze/konicaminolta.jpg
 
 logo:
   - name: 株式会社空

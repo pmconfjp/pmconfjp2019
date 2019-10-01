@@ -1,6 +1,41 @@
 normals:
-  - name: Marty Cagan
-    organization: Silicon Valley Product Group
-    title: Partner and Founder
-    profile_image_url: /assets/images/speakers/keynote/marty_cagan.jpg
-    profile: ""
+  - name: 馬田隆明
+    organization: 東京大学 FoundX
+    title: ディレクター
+    profile_image_url: /assets/images/speakers/takaaki-umada.png
+    profile: "University of Toronto 卒業後、日本マイクロソフトでの Visual Studio のプロダクトマネージャーを経て、テクニカルエバンジェリストとしてスタートアップ支援を行う。2016 年 6 月より現職。 スタートアップ向けのスライド、ブログなどの情報提供を行う。著書に『逆説のスタートアップ思考』『成功する起業家は居場所を選ぶ』。"
+  - name: 川口恭伸
+    organization: 一般社団法人スクラムギャザリング東京実行委員会
+    title: 代表理事
+    profile_image_url: /assets/images/speakers/yasunobu-kawaguchi.png
+    profile: "アギレルゴコンサルティング株式会社シニアアジャイルコーチ。北陸先端科学技術大学院大学修了ののち、金融情報サービスベンダー(株)QUICKにてデータメンテナンス/システム開発、プロダクト/サービス企画開発、仮想化インフラ構築などを担当。2008年スクラムに出会い、パイロットプロジェクトを始める。2011年イノベーションスプリント実行委員長、2011年からスクラムギャザリング東京実行委員。2012-2018年楽天(株)にてアジャイルコーチ。楽天テクノロジーカンファレンス2012-2017実行委員。「Fearless Change」「ユーザーストーリーマッピング」監訳、「Joy, inc」共訳、「アジャイルエンタープライズ」監修。認定スクラムプロフェッショナル。ジム・コプリエン、ジェフ・パットン、ケン・ルービンなど、認定スクラムトレーニングの共同講師経験多数。"
+  - name: 坂田 一倫
+    organization: Pivotalジャパン株式会社
+    title: プロダクトマネージャー
+    profile_image_url: /assets/images/speakers/kazumichi-sakata.png
+    profile: "大手ウェブサービス会社、デザイン会社にて多くのUX改善や新規事業の立ち上げ、IT戦略に基づいたサービスの中長期戦略の立案から実行を担当。Pivotalジャパンに転職後は、プロダクトマネージャーとしてクライアントと一体となったLeanXPの思想に基づいたプロダクト開発を実践中。監訳書として『Lean UXーリーン思考によるユーザエクスペリエンス・デザイン（オライリー・ジャパン）』などがある。趣味はラグビー解説とアニメ評論。"
+  - name: 佐藤　真治
+    organization: First Compass Group
+    title: General Partner
+    profile_image_url: /assets/images/speakers/shinji-sato.png
+    profile: "1992年にStanford大学大学院に留学。Apple社を始めとするシリコンバレー企業にてエンジニアとしてソフトウェア開発に従事したのち、モバイルの可能性の求めてシリコンバレーで起業。その後、Evernote社などで、新規製品・サービスの企画をリード。プロダクトマネージメントの必要性を訴えるべく、2012年にマーティ・ケーガンによる「Inspired 日本語版」を監修、出版。現在、First Compass GroupのGeneral Partnerとして、製品企画開発のコンサルティング業務に従事。"
+  - name: 曽根原 春樹
+    organization: Smule, Inc
+    title: Head of Product in AI (Principal Product Manager)
+    profile_image_url: /assets/images/speakers/haruki-sonehara.png
+    profile: "2001年中央大学総合政策学部卒。文系だったものの新卒でエンジニアとしてCisco Systemsに入社。のちに転職した企業がJuniper Networksに買収され、2006年にUS本社転籍を機に渡米。その後プロダクトマネージャーに転身。Viavi、Ooyalaなどシリコンバレーのスタートアップ企業を経て、現在はソーシャル音楽アプリSmuleにて、Principal Product Managerとしてグローバルにプロダクト開発を指揮している。 Twitter: @Haruki_Sonehara"
+  - name: DoT
+    organization: 個人
+    title: プロダクトマネージャー
+    profile_image_url: /assets/images/pmconf_ico.png
+    profile: "デジタルコンテンツの開発歴26年、プロダクトマネージャー歴9年。頓智ドット株式会社にてセカイカメラ／tabの開発、フリービット株式会社にてMVNOフリービットモバイル（現トーンモバイル）の立ち上げに参加。その後プロダクト開発及びUXデザイン支援事業を立ち上げ、電通、凸版印刷、ソフトバンク、大手自動車メーカー等の製品開発を支援。HI学会最優秀プレゼンテーション賞、App Store Best app、グッドデザイン賞など受賞多数。AI、IoTについての著書複数。博士（政策・メディア）。"
+  - name: 広野 萌
+    organization: 一般社団法人デザインシップ
+    title: 代表理事
+    profile_image_url: /assets/images/speakers/hajime-hirono.png
+    profile: "早稲田大学文化構想学部卒。ヤフー株式会社にて新規事業企画やモバイルアプリのUX推進を手掛ける。2015年に株式会社FOLIOを共同創業し、CDOに就任。国内株式を取り扱う10年ぶりのオンライン証券を立ち上げた他、法律・医療・保険分野のスタートアップをデザイン顧問として支援。2018年に一般社団法人デザインシップを設立し、代表理事に就任。"
+  - name: 増井俊之 
+    organization: Nota Inc.
+    title: CTO
+    profile_image_url: /assets/images/speakers/toshiyuki-masui.png
+    profile: "1984年東京大学大学院工学系研究科電子工学専門課程修士課程修了。工学博士。シャープ、ソニーコンピュータサイエンス研究所、産業技術総合研究所、米国Appleなどに勤務後、2009年4月より慶應義塾大学環境情報学部教授。情報検索、テキスト入力、情報視覚化、実世界指向インタフェース、予測インタフェース、認証技術など、ユーザインタフェースに関連する幅広い研究開発を行なっている。携帯電話やスマートフォンで広く利用されている予測入力システムやフリック入力システムの開発者。Gyazo, Scrapbox, 本棚.org, QuickMLなど各種のWebサービスを運用中。"

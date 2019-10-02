@@ -81,7 +81,7 @@ html
 
           - if current_page.data.author.present?
             .session_introduction
-              - speakers.each do |speaker|
+              - speakers.concat(keynotes).each do |speaker|
                 - if speaker.name == current_page.data.author
                   .session_introduction_block
                     = image_tag speaker.profile_image_url, class: 'session_introduction_image'

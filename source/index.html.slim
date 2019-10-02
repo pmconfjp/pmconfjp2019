@@ -132,7 +132,8 @@ section.section
       .speakers_list
         - data.speakers.normals.each do |normals|
           .speakers_list_item
-            = image_tag normals.profile_image_url, class: 'speakers_list_image'
+            = link_to normals.session_page_url, do
+              = image_tag normals.profile_image_url, class: 'speakers_list_image'
             .speakers_list_name = normals.name
             .speakers_list_organization = normals.organization
             .speakers_list_title = normals.title

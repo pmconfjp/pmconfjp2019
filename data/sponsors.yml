@@ -87,6 +87,9 @@ bronze:
     logo_image_url: /assets/images/sponsors/bronze/konicaminolta.jpg
 
 logo:
+  - name: トランスファーワイズ・ジャパン株式会社
+    url: https://transferwise.com/jp
+    logo_image_url: /assets/images/sponsors/logo/transferwise.png
   - name: 株式会社空
     url: https://www.sora.flights
     logo_image_url: /assets/images/sponsors/logo/sora.jpg

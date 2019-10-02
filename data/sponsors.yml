@@ -53,6 +53,8 @@ silvers:
   - name: エムスリー株式会社
     url: https://jobs.m3.com/engineer/
     logo_image_url: /assets/images/sponsors/silver/m3.png
+  - name: 株式会社QUANTUM
+    logo_image_url: /assets/images/sponsors/silver/quantum.png
   - name: 株式会社アイキューブドシステムズ
     url: https://www.i3-systems.com/
     logo_image_url: /assets/images/sponsors/silver/i3systems.png
@@ -72,6 +74,12 @@ bronze:
   - name: NTTコミュニケーションズ株式会社　SpoLive
     url: https://spo.live/
     logo_image_url: /assets/images/sponsors/bronze/spolive.png
+  - name: ヤフー株式会社
+    url: https://www.yahoo.co.jp
+    logo_image_url: /assets/images/sponsors/bronze/yahoo.png
+  - name: 株式会社サイダス
+    url: https://www.cydas.com/
+    logo_image_url: /assets/images/sponsors/bronze/cydas.png
   - name: コニカミノルタ株式会社
     url: https://www.konicaminolta.com/jp-ja/index.html
     logo_image_url: /assets/images/sponsors/bronze/konicaminolta.jpg

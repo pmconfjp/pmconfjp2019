@@ -1,5 +1,5 @@
 ---
-title: 
+title: プロセスとプロダクトを共にデザインしていく
 description: 
 theme: 
 date: 2019-10-01 00:00

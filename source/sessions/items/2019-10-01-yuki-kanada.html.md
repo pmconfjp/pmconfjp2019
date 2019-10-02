@@ -1,5 +1,5 @@
 ---
-title: 
+title: 作り手の想いとユーザーをつなぐための悪戦苦闘
 description: 
 theme: 
 date: 2019-10-01 00:00

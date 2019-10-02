@@ -1,5 +1,5 @@
 ---
-title: 
+title: エムスリーでのプロダクトマネージャーとその取り組み（仮）
 description: 
 theme: 
 date: 2019-10-01 00:00

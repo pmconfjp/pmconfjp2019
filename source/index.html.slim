@@ -119,7 +119,7 @@ section.section
       .keynotes_list
         - data.keynote.keynotes.each do |keynote|
           .keynotes_list_item
-            = image_tag keynote.profile_image_url, class: 'keynotes_list_image'
+            = link_to image_tag(keynote.profile_image_url, class: 'keynotes_list_image'), keynote.session_page_url, title: keynote.name, 'data-toggle' => 'tooltip'
             .keynotes_list_name = keynote.name
             .keynotes_list_organization = keynote.organization
             .keynotes_list_title = keynote.title

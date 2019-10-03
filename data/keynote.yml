@@ -5,10 +5,10 @@ keynotes:
     profile_image_url: /assets/images/speakers/keynote/marty_cagan.jpg
     profile: ""
     session_page_url: "/sessions/2019/10/01/marty_cagan/index.html"
-  - name: "Harry D. Moseley"
-    organization: "Zoom Video Communications, Inc"
-    title: "Chief Information Officer"
-    profile_image_url: "/assets/images/speakers/keynote/harry-d-moseley.jpg"
-    profile: ""
-    session_page_url: "/sessions/2019/10/01/harry-d-moseley/index.html"
+  # - name: "Harry D. Moseley"
+  #   organization: "Zoom Video Communications, Inc"
+  #   title: "Chief Information Officer"
+  #   profile_image_url: "/assets/images/speakers/keynote/harry-d-moseley.jpg"
+  #   profile: ""
+  #   session_page_url: "/sessions/2019/10/01/harry-d-moseley/index.html"
 

@@ -75,6 +75,12 @@ helpers do
     arr
   end
 
+  def medias
+    arr = []
+    data.medias.each { |m| arr << m }
+    arr
+  end
+
   def members
     arr = []
     data.staff.organizers.each { |o| arr << o }

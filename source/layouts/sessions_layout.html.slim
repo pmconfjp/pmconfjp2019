@@ -39,7 +39,7 @@ html
         .session_theme[itemprop='theme'] = current_page.data.theme
         h1.session_title[itemporp='name'] = current_page.data.title
         .session_speaker[itemprop='author' itemscope itemtype='http://schema.org/Person']
-          - speakers.each do |speaker|
+          - speakers.concat(keynotes).each do |speaker|
             - if speaker.name == current_page.data.author
               .session_speaker_block
                 .session_speaker_names
@@ -81,7 +81,7 @@ html
 
           - if current_page.data.author.present?
             .session_introduction
-              - speakers.each do |speaker|
+              - speakers.concat(keynotes).each do |speaker|
                 - if speaker.name == current_page.data.author
                   .session_introduction_block
                     = image_tag speaker.profile_image_url, class: 'session_introduction_image'

@@ -1,0 +1,11 @@
+---
+title: 
+description: 日本初登壇！世界No.1のビデオコミュニケーションプラットフォーム“Zoom”のプロダクトマネジメントとは？成熟市場への参入にも関わらず、圧倒的なプロダクト力で市場を牽引するZoomが成功した理由をご紹介します
+theme: 
+date: 2019-10-01 00:00
+author: Harry D. Moseley
+category: sessions
+og_image_url: https://2019.pmconf.jp/assets/images/speakers/keynote/harry-d-moseley.jpg
+---
+
+日本初登壇！世界No.1のビデオコミュニケーションプラットフォーム“Zoom”のプロダクトマネジメントとは？成熟市場への参入にも関わらず、圧倒的なプロダクト力で市場を牽引するZoomが成功した理由をご紹介します

@@ -41,7 +41,7 @@ organizers:
   - name: 鳴釜 優子
     organization: パーソルイノベーション株式会社
     title: プロデューサー
-    profile_image_url: /assets/images/pmconf_ico.png
+    profile_image_url: /assets/images/profile_images/narukama.jpg
   - name: 三浦 伸明
     organization: 笑屋株式会社
     title: VPoE
@@ -52,6 +52,7 @@ organizers:
   - name: 横道 稔
     organization: LINE株式会社
     title: アジャイルコーチ
-    twitter: https://twitter.com/ykmc09
+    twitter: https://twitter.com/ykmc09_dev
+    github: https://github.com/ykmc09
     facebook: https://facebook.com/ykmc09
     profile_image_url: /assets/images/profile_images/ykmc09.jpeg

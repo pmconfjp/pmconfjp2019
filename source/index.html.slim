@@ -119,23 +119,23 @@ section.section
       .keynotes_list
         - data.keynote.keynotes.each do |keynote|
           .keynotes_list_item
-            = image_tag keynote.profile_image_url, class: 'keynotes_list_image'
+            = link_to image_tag(keynote.profile_image_url, class: 'keynotes_list_image'), keynote.session_page_url, title: keynote.name, 'data-toggle' => 'tooltip'
             .keynotes_list_name = keynote.name
             .keynotes_list_organization = keynote.organization
             .keynotes_list_title = keynote.title
 
-/ section.section
-/   .container
-/     h2.section_title SPEAKERS
-/     - if data.speakers.normals.present?
-/     .speakers
-/       .speakers_list
-/         - data.speakers.normals.each do |normals|
-/           .speakers_list_item
-/             = image_tag normals.profile_image_url, class: 'speakers_list_image'
-/             .speakers_list_name = normals.name
-/             .speakers_list_organization = normals.organization
-/             .speakers_list_title = normals.title
+section.section
+  .container
+    h2.section_title SPEAKERS(50音順)
+    - if data.speakers.normals.present?
+    .speakers
+      .speakers_list
+        - data.speakers.normals.each do |normals|
+          .speakers_list_item
+            = link_to image_tag(normals.profile_image_url, class: 'speakers_list_image'), normals.session_page_url,  title: normals.name, 'data-toggle' => 'tooltip'
+            .speakers_list_name = normals.name
+            .speakers_list_organization = normals.organization
+            .speakers_list_title = normals.title
       / .speakers_schedulelink
       /   = link_to '/schedule', class: 'btn' do
       /     i.fa.fa-arrow-circle-right
@@ -241,19 +241,22 @@ section.section
 /        - data.sponsors.medias.each do |medias|
 /          = link_to image_tag(medias.logo_image_url), medias.url, class: 'sponsors_list_item-medias', target: '_blank', title: medias.name, 'data-toggle' => 'tooltip'
 
-/ section.section
-/   .container
-/     .sponsorJobs
-/       h2.section_title 📣 PRODUCT MANAGER JOBS
-/       p.section_subTitle スポンサー企業のプロダクトマネージャー求人です
-/       .sponsorJobs_table
-/         - data.jobs.each do |jobs|
-/           .sponsorJobs_item
-/             .sponsorJobs_item_organization = jobs.organization
-/             .sponsorJobs_item_title
-/               = link_to jobs.url, class: 'sponsorJobs_item_title_link', target: '_blank' do
-/                 i.fa.fa-fw.fa-external-link
-/                 =< jobs.title
+section.section
+  .container
+    .sponsorJobs
+    - if data.jobs.length > 0
+      h2.section_title JOB BOARD
+      p.section_subTitle スポンサー企業の求人情報です
+      .sponsorJobs_table
+        - data.jobs.each do |jobs|
+          .sponsorJobs_item
+            .sponsorJobs_item_organization = jobs.organization
+            .sponsorJobs_item_title
+              = link_to jobs.url, class: 'sponsorJobs_item_title_link', target: '_blank' do
+                i.fa.fa-fw.fa-external-link
+                =< jobs.title
+    - else
+ 
 
 / section.section
 /   .container

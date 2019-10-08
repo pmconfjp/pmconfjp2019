@@ -18,3 +18,7 @@
   media_name: publickey
   url: https://www.publickey1.jp/
   logo_image_url: /assets/images/sponsors/media/publickey.png
+- name: 朝日インタラクティブ株式会社
+  media_name: CNET Japan
+  url: https://japan.cnet.com/
+  logo_image_url: /assets/images/sponsors/media/cnet.png

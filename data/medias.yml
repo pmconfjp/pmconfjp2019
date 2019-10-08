@@ -1,4 +1,20 @@
-#medias:
-#  - name: pmconf
-#    url: "https://linecorp.com"
-#    logo_image_url: /assets/images/pmconf_ico.png
+- name: アイティメディア株式会社
+  media_name: ＠IT
+  url: https://www.atmarkit.co.jp/
+  logo_image_url: /assets/images/sponsors/media/ait.png
+- name: アイティメディア株式会社
+  media_name: ITmedia エンタープライズ
+  url: https://www.itmedia.co.jp/enterprise/
+  logo_image_url: /assets/images/sponsors/media/itmedia-enterprise.png
+- name: キャリアハック
+  media_name: キャリアハック
+  url: https://careerhack.en-japan.com/
+  logo_image_url: /assets/images/sponsors/media/careerhack.png
+- name: 株式会社キャリアデザインセンター
+  media_name: エンジニアtype
+  url: https://type.jp/et/feature/
+  logo_image_url: /assets/images/sponsors/media/engineertype.png
+- name: publickey
+  media_name: publickey
+  url: https://www.publickey1.jp/
+  logo_image_url: /assets/images/sponsors/media/publickey.png

@@ -215,6 +215,16 @@ section.section
       .sponsors_list
         = 'To be announced'
 
+    - if data.medias.present?
+      h3.sponsors_title MEDIA SPONSORS
+      .sponsors_list
+        - data.medias.each do |medias|
+          = link_to image_tag(medias.logo_image_url), medias.url, class: 'sponsors_list_item-medias', target: '_blank', title: medias.name, 'data-toggle' => 'tooltip'
+    - else
+      h3.sponsors_title MEDIA SPONSORS
+      .sponsors_list
+        = 'To be announced'
+
     .sponsors_description
       h4. スポンサーについて
       p プロダクトマネージャーカンファレンス 2019 では、本カンファレンスにご協賛いただけるスポンサー企業を募集しております。プロダクト開発の現場で活躍するプロダクトマネージャーに、自社をアピールできるまたとない機会です。協賛プログラムの詳細については、以下の資料をご参照ください。皆様のご支援をお待ちしております。
@@ -235,11 +245,7 @@ section.section
 /         - data.sponsors.goods.each do |goods|
 /           = link_to image_tag(goods.logo_image_url), goods.url, class: 'sponsors_list_item-goods', target: '_blank', title: goods.name, 'data-toggle' => 'tooltip'
 
-/     - if data.sponsors.medias.present?
-/       h3.sponsors_title 📷 MEDIA SPONSORS
-/       .sponsors_list
-/        - data.sponsors.medias.each do |medias|
-/          = link_to image_tag(medias.logo_image_url), medias.url, class: 'sponsors_list_item-medias', target: '_blank', title: medias.name, 'data-toggle' => 'tooltip'
+
 
 section.section
   .container

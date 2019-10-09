@@ -11,4 +11,9 @@ keynotes:
     profile_image_url: "/assets/images/speakers/keynote/harry-d-moseley.jpg"
     profile: ""
     session_page_url: "/sessions/2019/10/01/harry-d-moseley/index.html"
-
+  - name: "Kaarel Kuddu"
+    organization: "TransferWise"
+    title: "Head of Product"
+    profile_image_url: "/assets/images/speakers/keynote/kaarel-kuddu.jpg"
+    profile: "Kaarel is the Head of Product at TransferWise. For four years, he’s been responsible for the expansion and development of the TransferWise product around the world. Prior to TransferWise, he founded and ran a product and engineering consultancy."
+    session_page_url: "/sessions/2019/10/01/kaarel-kuddu/index.html"

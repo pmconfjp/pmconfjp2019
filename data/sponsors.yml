@@ -64,6 +64,9 @@ bronze:
   - name: ルームクリップ株式会社
     url: https://roomclip.jp/
     logo_image_url: /assets/images/sponsors/bronze/roomclip.png
+  - name: ディップ株式会社
+    url: https://www.dip-net.co.jp/service/kobot
+    logo_image_url: /assets/images/sponsors/bronze/kobot_dip.png
   - name: ベルフェイス株式会社
     url: https://bell-face.com/reason/
     logo_image_url: /assets/images/sponsors/bronze/bellface.png

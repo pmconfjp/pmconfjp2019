@@ -49,10 +49,14 @@ organizers:
     github: https://github.com/miuranobuaki
     facebook: https://www.facebook.com/nobuaki.miura
     profile_image_url: /assets/images/profile_images/NobuakiMiura.png
+  - name: 山本 浩之
+    organization: 株式会社メジャース
+    title: 代表取締役社長
+    profile_image_url: /assets/images/profile_images/yamamoto.png
   - name: 横道 稔
     organization: LINE株式会社
     title: アジャイルコーチ
-    twitter: https://twitter.com/ykmc09_dev
+    twitter: https://twitter.com/ykmc09
     github: https://github.com/ykmc09
     facebook: https://facebook.com/ykmc09
     profile_image_url: /assets/images/profile_images/ykmc09.jpeg

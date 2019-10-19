@@ -6,7 +6,7 @@
   media_name: ITmedia エンタープライズ
   url: https://www.itmedia.co.jp/enterprise/
   logo_image_url: /assets/images/sponsors/media/itmedia-enterprise.png
-- name: キャリアハック
+- name: エン・ジャパン株式会社
   media_name: キャリアハック
   url: https://careerhack.en-japan.com/
   logo_image_url: /assets/images/sponsors/media/careerhack.png
@@ -22,3 +22,7 @@
   media_name: CNET Japan
   url: https://japan.cnet.com/
   logo_image_url: /assets/images/sponsors/media/cnet.png
+- name: 株式会社技術評論社
+  media_name: Software Design
+  url: http://gihyo.jp/magazine/SD/
+  logo_image_url: /assets/images/sponsors/media/softwaredesign.png

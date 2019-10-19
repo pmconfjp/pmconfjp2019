@@ -1,0 +1,79 @@
+.timetable {
+  border: 1px solid #ccc;
+
+  th {
+    padding: 8px;
+    background-color: #9350b5;
+    border-left: 1px solid #ccc;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+
+    &:first-child {
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+  }
+
+  &_time {
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: monospace;
+  }
+
+  td:not(.timetable_time) {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #eaeaea;
+    font-size: 1.4rem;
+
+    &.timetable_session {
+      background-color: #fff;
+    }
+  }
+
+  &_session {
+  }
+
+  &_theme {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 0 5px;
+    background-color: $brand-color;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &_speakerImage {
+    margin-bottom: 8px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &_title {
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  &_speaker {
+    color: #aaa;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  &_speakerName {
+    margin-bottom: 4px;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}

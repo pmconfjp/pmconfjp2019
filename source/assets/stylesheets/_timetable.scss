@@ -2,6 +2,7 @@
   border: 1px solid #ccc;
 
   th {
+    width: 15%;
     padding: 8px;
     background-color: #9350b5;
     border-left: 1px solid #ccc;
@@ -9,9 +10,14 @@
     font-size: 1.4rem;
     text-align: center;
 
-    &:first-child {
+    &.timetable_time {
+      width: 5%;
       background-color: #fff;
       border: 1px solid #ccc;
+    }
+    &.venue-f,
+    &.venue-e {
+      width: 10%;
     }
   }
 

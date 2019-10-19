@@ -20,12 +20,12 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
       <thead>
         <tr>
           <th class="timetable_time"></th>
-          <th>B1F会場A<br> (850名着席)</th>
-          <th>2F会場B<br> (220名着席)</th>
-          <th>2F会場C<br> (220名着席)</th>
-          <th>2F会場D<br> (50名)</th>
-          <th>2F会場F<br> (50名)</th>
-          <th>2F会場E</th>
+          <th class="venue-a">B1F会場A<br> (850名着席)</th>
+          <th class="venue-b">2F会場B<br> (220名着席)</th>
+          <th class="venue-c">2F会場C<br> (220名着席)</th>
+          <th class="venue-d">2F会場D<br> (50名)</th>
+          <th class="venue-f">2F会場F<br> (50名)</th>
+          <th class="venue-e">2F会場E</th>
         </tr>
       </thead>
       <tbody>
@@ -437,7 +437,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             span.timetable_theme
               | Session
             .timetable_speakerImage
-              = image_tag speakers.profile_image_url, width: '50', height: '50'
+              = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
             .timetable_descriptions
               .timetable_title
                 a href="../sessions/2019/10/01/yasunobu-kawaguchi/" Session
@@ -487,7 +487,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             span.timetable_theme
               | Session
             .timetable_speakerImage
-              = image_tag speakers.profile_image_url, width: '50', height: '50'
+              = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
             .timetable_descriptions
               .timetable_title
                 | session
@@ -727,12 +727,12 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
     <table class="timetable">
       <tr>
         <th class="timetable_time"></th>
-        <th>B1F会場A<br> (850名着席)</th>
-        <th>2F会場B<br> (220名着席)</th>
-        <th>2F会場C<br> (220名着席)</th>
-        <th>2F会場D<br> (50名)</th>
-        <th>2F会場F<br> (50名)</th>
-        <th>2F会場E</th>
+        <th class="venue-a">B1F会場A<br> (850名着席)</th>
+        <th class="venue-b">2F会場B<br> (220名着席)</th>
+        <th class="venue-c">2F会場C<br> (220名着席)</th>
+        <th class="venue-d">2F会場D<br> (50名)</th>
+        <th class="venue-f">2F会場F<br> (50名)</th>
+        <th class="venue-e">2F会場E</th>
       </tr>
       <tr>
         <td class="timetable_time">09:00</td>

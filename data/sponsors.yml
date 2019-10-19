@@ -42,6 +42,9 @@ golds:
   - name: Classi株式会社
     url: https://corp.classi.jp/
     logo_image_url: /assets/images/sponsors/gold/classi.jpg
+  - name: ギルドワークス株式会社
+    url: https://guildworks.jp/
+    logo_image_url: /assets/images/sponsors/gold/guildworks.png
 
 silvers:
   - name: 株式会社エウレカ
@@ -59,6 +62,9 @@ silvers:
   - name: 株式会社アイキューブドシステムズ
     url: https://www.i3-systems.com/
     logo_image_url: /assets/images/sponsors/silver/i3systems.png
+  - name: 株式会社チームスピリット
+    url: https://corp.teamspirit.com/ja-jp/
+    logo_image_url: /assets/images/sponsors/silver/teamspirit.png
 
 bronze:
   - name: ルームクリップ株式会社

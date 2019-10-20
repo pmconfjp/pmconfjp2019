@@ -31,18 +31,24 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
       <tbody>
         <tr>
           <td class="timetable_time">09:00</td>
-          <td>受付</td>
-          <td></td>
-          <td></td>
+          <td class="timetable_extra">受付</td>
+          <td class="timetable_closed"></td>
+          <td class="timetable_closed"></td>
           <td rowspan="37">休憩</td>
-          <td rowspan="16">利用不可</td>
-          <td rowspan="16">利用不可</td>
+          <td class="timetable_closed" rowspan="16">利用不可</td>
+          <td class="timetable_closed" rowspan="16">利用不可</td>
         </tr>
         <tr>
           <td class="timetable_time">10:00</td>
-          <td rowspan="3" class="timetable_session">Welcome Talk<br>プラチナスポンサー紹介<br>2F紹介<br>参加者交流</td>
-          <td rowspan="3">B1F会場A中継</td>
-          <td rowspan="3">B1F会場A中継</td>
+          <td rowspan="3" class="timetable_session">
+            .timetable_speakerImage
+              = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+            .timetable_descriptions
+              .timetable_speakerName
+                | Welcome Talk
+          </td>
+          <td class="timetable_relay" rowspan="3">B1F会場A中継</td>
+          <td class="timetable_relay" rowspan="3">B1F会場A中継</td>
         </tr>
         <tr>
           <td class="timetable_time">10:05</td>
@@ -68,8 +74,8 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                     span
                       = keynotes.organization
           </td>
-          <td rowspan="10">B1F会場A中継</td>
-          <td rowspan="10">B1F会場A中継</td>
+          <td class="timetable_relay" rowspan="10">B1F会場A中継</td>
+          <td class="timetable_relay" rowspan="10">B1F会場A中継</td>
         </tr>
         <tr>
           <td class="timetable_time">10:20</td>
@@ -125,9 +131,9 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                     span
                       = keynotes.organization
           </td>
-          <td rowspan="9">B1F会場A中継</td>
-          <td rowspan="9">B1F会場A中継</td>
-          <td rowspan="78">B1F会場A中継</td>
+          <td class="timetable_relay" rowspan="9">B1F会場A中継</td>
+          <td class="timetable_relay" rowspan="9">B1F会場A中継</td>
+          <td class="timetable_relay" rowspan="78">B1F会場A中継</td>
           <td class="timetable_extra" rowspan="96">ブース展示</td>
         </tr>
         <tr>
@@ -162,7 +168,20 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
         </tr>
         <tr>
           <td class="timetable_time">12:05</td>
-          <td class="timetable_extra" rowspan="6">サイン会</td>
+          <td class="timetable_extra" rowspan="6">
+            - keynotes.each do |keynotes|
+              - if keynotes.name == "Marty Cagan"
+                .timetable_speakerImage
+                  = image_tag keynotes.profile_image_url, width: '50', height: '50'
+                .timetable_descriptions
+                  .timetable_title
+                    | サイン会
+                  .timetable_speaker
+                    .timetable_speakerName
+                      = keynotes.name
+                    span
+                      = keynotes.organization
+          </td>
         </tr>
         <tr>
           <td class="timetable_time">12:10</td>
@@ -213,7 +232,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                     span
                       = speakers.organization
           </td>
-          <td rowspan="6">B1F会場A中継</td>
+          <td class="timetable_relay" rowspan="6">B1F会場A中継</td>
           <td rowspan="6" class="timetable_session">
             - speakers.each do |speakers|
               - if speakers.name == "川口 恭伸"
@@ -306,7 +325,20 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                     span
                       = speakers.organization
           </td>
-          <td rowspan="6">[フォローアップ]<br>LINE</td>
+          <td class="timetable_bside" rowspan="6">
+            - speakers.each do |speakers|
+              - if speakers.name == "二木 祥平"
+                span.timetable_theme
+                  | B-Side
+                .timetable_speakerImage
+                  = image_tag speakers.profile_image_url, width: '50', height: '50'
+                .timetable_descriptions
+                  .timetable_speaker
+                    .timetable_speakerName
+                      = speakers.name
+                    span
+                      = speakers.organization
+          </td>
           <td rowspan="2">休憩</td>
         </tr>
         <tr>
@@ -416,7 +448,20 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                     span
                       = speakers.organization
           </td>
-          <td rowspan="3">[フォローアップ]<br>freee</td>
+          <td class="timetable_bside" rowspan="3">
+            - speakers.each do |speakers|
+              - if speakers.name == "岡田 悠"
+                span.timetable_theme
+                  | B-Side
+                .timetable_speakerImage
+                  = image_tag speakers.profile_image_url, width: '50', height: '50'
+                .timetable_descriptions
+                  .timetable_speaker
+                    .timetable_speakerName
+                      = speakers.name
+                    span
+                      = speakers.organization
+          </td>
         </tr>
         <tr>
           <td class="timetable_time">14:25</td>
@@ -475,9 +520,22 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             .timetable_descriptions
               .timetable_speaker
                 .timetable_speakerName
-                  | 未定
+                  | 調整中
           </td>
-          <td rowspan="3">[フォローアップ]<br>エン・ジャパン</td>
+          <td class="timetable_bside" rowspan="3">
+            - speakers.each do |speakers|
+              - if speakers.name == "岡田 康豊"
+                span.timetable_theme
+                  | B-Side
+                .timetable_speakerImage
+                  = image_tag speakers.profile_image_url, width: '50', height: '50'
+                .timetable_descriptions
+                  .timetable_speaker
+                    .timetable_speakerName
+                      = speakers.name
+                    span
+                      = speakers.organization
+          </td>
         </tr>
         <tr>
           <td class="timetable_time">14:55</td>
@@ -495,10 +553,9 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             .timetable_speakerImage
               = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
             .timetable_descriptions
-              .timetable_title
-                | session
               .timetable_speaker
-                .timetable_speakerName SFDC
+                .timetable_speakerName
+                  | 調整中
           </td>
         </tr>
         <tr>
@@ -534,16 +591,26 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                     span
                       = speakers.organization
           </td>
-          <td rowspan="6">B1F会場A中継</td>
+          <td class="timetable_relay" rowspan="6">B1F会場A中継</td>
           <td rowspan="6" class="timetable_session">
-            span.timetable_theme
-              | Session
-            .timetable_speakerImage
-              = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
-            .timetable_descriptions
-              .timetable_speaker
-                .timetable_speakerName
-                  | 佐藤さんx曽根原さんx馬田さん
+            - speakers.each do |speakers|
+              - if speakers.name == "馬田 隆明"
+                span.timetable_theme
+                  | Talk Session
+                .timetable_speakerImage
+                  = image_tag speakers.profile_image_url, width: '50', height: '50'
+                .timetable_descriptions
+                  .timetable_descriptions
+                    .timetable_title
+                      a href="../sessions/2019/10/16/talk-session/" シリコンバレーPMのキャリアと働き方
+                  .timetable_speaker
+                    .timetable_speakerName
+                      | 馬田 隆明
+                      <br>
+                      | 佐藤 真治
+                      <br>
+                      | 曽根原 春樹
+
           </td>
           <td rowspan="3" class="timetable_session">
             span.timetable_theme
@@ -553,7 +620,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             .timetable_descriptions
               .timetable_speaker
                 .timetable_speakerName
-                  | 未定
+                  | 調整中
           </td>
         </tr>
         <tr>
@@ -571,7 +638,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
         </tr>
         <tr>
           <td class="timetable_time">15:55</td>
-          <td rowspan="22">利用不可</td>
+          <td class="timetable_closed" rowspan="22">利用不可</td>
         </tr>
         <tr>
           <td class="timetable_time">16:00</td>
@@ -600,8 +667,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                     span
                       = speakers.organization
           </td>
-          <td rowspan="6">[フォローアップ]<br>クライス＆カンパニー</td>
-          <td rowspan="19">利用不可</td>
+          <td class="timetable_bside" rowspan="6">
+            - speakers.each do |speakers|
+              - if speakers.name == "丸山 貴宏"
+                span.timetable_theme
+                  | B-Side
+                .timetable_speakerImage
+                  = image_tag speakers.profile_image_url, width: '50', height: '50'
+                .timetable_descriptions
+                  .timetable_speaker
+                    .timetable_speakerName
+                      = speakers.name
+                    span
+                      = speakers.organization
+          </td>
+          <td class="timetable_closed" rowspan="19">利用不可</td>
         </tr>
         <tr>
           <td class="timetable_time">16:15</td>
@@ -644,7 +724,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                     span
                       = keynotes.organization
           </td>
-          <td rowspan="9">B1F会場A中継</td>
+          <td class="timetable_relay" rowspan="9">B1F会場A中継</td>
         </tr>
         <tr>
           <td class="timetable_time">16:55</td>
@@ -680,8 +760,8 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
         </tr>
         <tr>
           <td class="timetable_time">17:45</td>
-          <td rowspan="18">利用不可</td>
-          <td rowspan="18">利用不可</td>
+          <td class="timetable_closed" rowspan="18">利用不可</td>
+          <td class="timetable_closed" rowspan="18">利用不可</td>
           <td class="timetable_extra" rowspan="18" colspan="3">ネットワーキング</td>
         </tr>
         <tr>
@@ -771,9 +851,9 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
         <td rowspan="2" class="timetable_session">Welcome Talk</td>
         <td rowspan="2">B1F会場A中継</td>
         <td rowspan="2">B1F会場A中継</td>
-        <td rowspan="15">利用不可</td>
-        <td rowspan="15">利用不可</td>
-        <td rowspan="15">利用不可</td>
+        <td class="timetable_closed" rowspan="15">利用不可</td>
+        <td class="timetable_closed" rowspan="15">利用不可</td>
+        <td class="timetable_closed" rowspan="15">利用不可</td>
       </tr>
       <tr>
         <td class="timetable_time">10:05</td>
@@ -863,7 +943,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
         <td class="timetable_time">12:00</td>
         <td rowspan="6" class="timetable_session">[Session]<br>Smule曽根原さん</td>
         <td rowspan="6" class="timetable_session">[Session]<br>DeNA</td>
-        <td rowspan="6" class="timetable_session">[フォローアップ]<br>メルカリ</td>
+        <td rowspan="6" class="timetable_session">[B-side]<br>メルカリ</td>
       </tr>
       <tr>
         <td class="timetable_time">12:05</td>
@@ -956,7 +1036,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
         <td class="timetable_time">14:10</td>
         <td rowspan="6" class="timetable_session">[Session]<br>パネルトーク(DX)</td>
         <td rowspan="6" class="timetable_session">[Session]<br>楽天</td>
-        <td rowspan="6" class="timetable_session">[フォローアップ]<br>プレイド</td>
+        <td rowspan="6" class="timetable_session">[B-side]<br>プレイド</td>
         <td rowspan="2">休憩</td>
       </tr>
       <tr>
@@ -1023,7 +1103,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
         <td class="timetable_time">15:30</td>
         <td rowspan="4" class="timetable_session">[Session]<br>ウィングアーク1st</td>
         <td rowspan="4" class="timetable_session">[Session]</td>
-        <td rowspan="6">[フォローアップ]<br>プレイド</td>
+        <td rowspan="6">[B-side]<br>プレイド</td>
       </tr>
       <tr>
         <td class="timetable_time">15:35</td>
@@ -1047,7 +1127,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
       <tr>
         <td>&nbsp;</td>
         <td rowspan="5" class="timetable_session">[Session]<br>日産</td>
-        <td rowspan="4">[フォローアップ]<br>ウィングアーク1st</td>
+        <td rowspan="4">[B-side]<br>ウィングアーク1st</td>
         <td rowspan="7">休憩</td>
       </tr>
       <tr>
@@ -1077,7 +1157,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
         <td class="timetable_time">16:30</td>
         <td rowspan="4" class="timetable_session">[Session]<br>ラクスル</td>
         <td rowspan="6" class="timetable_session">[Session]<br>ライゾマティクス</td>
-        <td rowspan="3">[フォローアップ]<br>日産</td>
+        <td rowspan="3">[B-side]<br>日産</td>
       </tr>
       <tr>
         <td class="timetable_time">16:35</td>
@@ -1101,7 +1181,7 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
       <tr>
         <td class="timetable_time">17:00</td>
         <td rowspan="4">休憩</td>
-        <td rowspan="3">[フォローアップ]<br>日産</td>
+        <td rowspan="3">[B-side]<br>日産</td>
       </tr>
       <tr>
         <td class="timetable_time">17:05</td>

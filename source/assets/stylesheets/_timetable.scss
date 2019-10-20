@@ -1,5 +1,11 @@
 .timetable {
-  border: 1px solid #ccc;
+  display: block;
+
+  @media (max-width: $screen-xs-max) {
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
 
   th {
     width: 15%;
@@ -23,7 +29,7 @@
 
   &_time {
     width: 60px;
-    height: 60px;
+    height: 45px;
     padding: 8px;
     border: 1px solid #ccc;
     text-align: center;
@@ -35,7 +41,7 @@
     padding: 8px;
     text-align: center;
     border: 1px solid #ccc;
-    background-color: #eaeaea;
+    background-color: #d5efe1;
     font-size: 1.4rem;
 
     &.timetable_session {
@@ -48,6 +54,19 @@
     &.timetable_extra {
       background-color: #fff;
       font-weight: bold;
+    }
+    &.timetable_relay {
+      background-color: #e8e7d8;
+    }
+    &.timetable_bside {
+      background-color: #fff;
+
+      .timetable_theme {
+        background-color: #d1d500;
+      }
+    }
+    &.timetable_closed {
+      background-color: #eaeaea;
     }
   }
 
@@ -76,6 +95,8 @@
   &_title {
     margin-bottom: 8px;
     line-height: 1.4;
+    font-weight: bold;
+    font-feature-settings: "palt";
   }
 
   &_speaker {

@@ -41,6 +41,14 @@
     &.timetable_session {
       background-color: #fff;
     }
+    &.timetable_lunch {
+      background-color: #fff;
+      font-weight: bold;
+    }
+    &.timetable_extra {
+      background-color: #fff;
+      font-weight: bold;
+    }
   }
 
   &_session {

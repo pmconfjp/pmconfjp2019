@@ -302,15 +302,6 @@
   session_page_url: "/sessions/2019/11/13/S2-016/"
   speakers:
     - "島澤 甲"
-- id: "S2-018"
-  theme: "B-Side"
-  title: ""
-  organization: "？"
-  desc: ""
-  venue: "ROOM2-2"
-  session_page_url: "/sessions/2019/11/13/S2-018/"
-  speakers:
-    - "未定"
 - id: "S2-019"
   theme: "Session"
   title: "コネクティドカーにおけるプロダクトマネージメント"

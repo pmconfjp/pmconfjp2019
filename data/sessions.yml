@@ -106,6 +106,14 @@
   session_page_url: "/sessions/2019/11/12/S1-012/"
   speakers:
     - "馬田 隆明"
+- id: "S1-013"
+  theme: "Session"
+  title: "教育事業におけるプロダクト・マネジメントとは"
+  organization: "Classi株式会社"
+  desc: ""
+  session_page_url: "/sessions/2019/11/12/S1-013/"
+  speakers:
+    - "竹部 陽司"
 - id: "S1-014"
   theme: "B-Side"
   title: ""

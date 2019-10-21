@@ -38,6 +38,7 @@
   }
 
   td:not(.timetable_time) {
+    max-width: 200px;
     padding: 8px;
     text-align: center;
     border: 1px solid #ccc;
@@ -97,6 +98,7 @@
     line-height: 1.4;
     font-weight: bold;
     font-feature-settings: "palt";
+    white-space: pre-wrap;
   }
 
   &_speaker {

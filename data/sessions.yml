@@ -320,6 +320,15 @@
   session_page_url: "/sessions/2019/11/13/S2-016/"
   speakers:
     - "島澤 甲"
+- id: "S2-017"
+  theme: "Session"
+  title: "『突破するプロダクトマネジメント ～ 実践編』"
+  organization: "dely株式会社"
+  desc: ""
+  venue: "ROOM2-1"
+  session_page_url: "/sessions/2019/11/13/S2-017/"
+  speakers:
+    - "坪田 朋"
 - id: "S2-019"
   theme: "Session"
   title: "コネクティドカーにおけるプロダクトマネージメント"

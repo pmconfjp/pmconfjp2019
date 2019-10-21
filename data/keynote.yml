@@ -1,17 +1,20 @@
 keynotes:
-  - name: Marty Cagan
+  - id: keynote1
+    name: Marty Cagan
     organization: Silicon Valley Product Group
     title: Partner and Founder / Inspired著者
     profile_image_url: /assets/images/speakers/keynote/marty_cagan.jpg
     profile: ""
     session_page_url: "/sessions/2019/10/01/marty_cagan/index.html"
-  - name: "Harry D. Moseley"
+  - id: keynote2
+    name: "Harry D. Moseley"
     organization: "Zoom Video Communications, Inc"
     title: "Chief Information Officer"
     profile_image_url: "/assets/images/speakers/keynote/harry-d-moseley.jpg"
     profile: ""
     session_page_url: "/sessions/2019/10/01/harry-d-moseley/index.html"
-  - name: "Kaarel Kuddu"
+  - id: keynote3
+    name: "Kaarel Kuddu"
     organization: "TransferWise"
     title: "Head of Product"
     profile_image_url: "/assets/images/speakers/keynote/kaarel-kuddu.jpg"

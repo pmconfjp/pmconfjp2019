@@ -111,6 +111,7 @@
   title: "教育事業におけるプロダクト・マネジメントとは"
   organization: "Classi株式会社"
   desc: ""
+  venue: "ROOM2-1"
   session_page_url: "/sessions/2019/11/12/S1-013/"
   speakers:
     - "竹部 陽司"
@@ -134,14 +135,6 @@
     - "丸山 貴宏"
     - "土屋 尚史"
     - "杉浦 正明"
-- id: "S1-016"
-  theme: "Session"
-  title: "未定"
-  organization: "未定"
-  desc: "未定"
-  session_page_url: "/sessions/2019/11/12/S1-016/"
-  speakers:
-    - "未定"
 - id: "S1-017"
   theme: "Session"
   title: "セッション詳細"
@@ -371,11 +364,13 @@
   venue: "ROOM2-2"
   session_page_url: "/sessions/2019/11/13/S2-024/"
   speakers:
-    - "水島 壮太"- id: "S2-026"
+    - "水島 壮太"
+- id: "S2-026"
   theme: "Panel Session"
   title: "シリコンバレーPMのキャリアと働き方"
   organization: ""
   desc: "シリコンバレーで活躍するお二人にUSのプロダクト開発カルチャーについて語っていただきます。・日米のプロダクト開発カルチャーの違い・プロダクトマネージャー同士の交流やスキルの磨き方・どのようなキャリアを経てPMになるのか、PMの次のステップは"
+  venue: "ROOM2-1"
   session_page_url: "/sessions/2019/11/13/S2-026/"
   speakers:
     - "佐藤 真治"

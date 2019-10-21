@@ -112,6 +112,12 @@ helpers do
     arr
   end
 
+  def sessions
+    arr = []
+    data.sessions.each { |ses| arr << ses }
+    arr
+  end
+
   def communities
     arr = []
     data.communities.each { |co| arr << co }

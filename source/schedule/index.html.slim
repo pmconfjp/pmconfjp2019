@@ -925,14 +925,37 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                       | 調整中
           </td>
           <td rowspan="3" class="timetable_session">
-            span.timetable_theme
-              | Session
-            .timetable_speakerImage
-              = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
-            .timetable_descriptions
-              .timetable_speaker
-                .timetable_speakerName
-                  | 調整中
+            - sessionNotExist = true
+            - sessions.each do |sessions|
+              - if sessions.id == "S1-026"
+                - sessionNotExist = false
+                span.timetable_theme
+                  = sessions.theme
+                .timetable_speakerImage
+                  - speakers.each do |speakers|
+                    - if speakers.name == sessions.speakers[0]
+                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                .timetable_descriptions
+                  .timetable_descriptions
+                    .timetable_title
+                      = link_to sessions.title, sessions.session_page_url 
+                  .timetable_speaker
+                    .timetable_speakerName
+                      - sessions.speakers.each do |session_speaker|
+                        - if session_speaker == sessions.speakers[0]
+                          = session_speaker
+                        - else
+                          | <br />
+                          = session_speaker
+            - if sessionNotExist
+                span.timetable_theme
+                  | Session
+                .timetable_speakerImage
+                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                .timetable_descriptions
+                  .timetable_speaker
+                    .timetable_speakerName
+                      | 調整中
           </td>
         </tr>
         <tr>

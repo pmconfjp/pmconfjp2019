@@ -142,9 +142,9 @@
   venue: "ROOM2-2"
   session_page_url: "/sessions/2019/11/12/S1-016/"
   speakers:
-    - "馬田 隆明"
-    - "曽根原 春樹"
     - "佐藤 真治"
+    - "曽根原 春樹"
+    - "馬田 隆明"
 - id: "S1-017"
   theme: "Session"
   title: "セッション詳細"

@@ -1,8 +1,8 @@
 - id: "S1-001"
   theme: "Keynote"
-  title: "Keynote Session"
+  title: "ORDINARY PEOPLE, EXTRAORDINARY RESULTS"
   organization: "Silicon Valley Product Group"
-  desc: ""
+  desc: "This talk will discuss the critical traits and behaviors of many of our industry's best product teams.  I’ve had the extremely good fortune to be able to work with many of the very best technology product teams in the world. People creating the products you use and love every day.  Teams that are literally changing the world.  What I’ve learned is that there is a profound difference between how the very best product companies create technology products, and the rest. And I don’t mean minor differences.  Everything from how the leaders behave, to the level of empowerment of teams, to how the organization thinks about funding, staffing and producing products, down to how product, design and engineering collaborate to discover effective solutions for their customers.   For those that have not yet had the opportunity to participate in, or observe a strong empowered product team up close, in this talk I wanted to try to give you a glimpse into some of the important differences that distinguish the best product teams from the rest."
   venue: "MAIN"
   session_page_url: "/sessions/2019/11/12/S1-001/"
   speakers:
@@ -157,7 +157,7 @@
     - "杉浦 正明"
 - id: "S1-019"
   theme: "Keynote"
-  title: "Keynote"
+  title: "Keynote Session"
   organization: "Zoom Video Communications, Inc"
   desc: "日本初登壇！世界No.1のビデオコミュニケーションプラットフォーム“Zoom”のプロダクトマネジメントとは？成熟市場への参入にも関わらず、圧倒的なプロダクト力で市場を牽引するZoomが成功した理由をご紹介します"
   venue: "MAIN"

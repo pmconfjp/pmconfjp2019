@@ -1,8 +1,8 @@
 - id: "S1-001"
   theme: "Keynote"
-  title: "Keynote Session"
+  title: "ORDINARY PEOPLE, EXTRAORDINARY RESULTS"
   organization: "Silicon Valley Product Group"
-  desc: ""
+  desc: "This talk will discuss the critical traits and behaviors of many of our industry's best product teams.  I’ve had the extremely good fortune to be able to work with many of the very best technology product teams in the world. People creating the products you use and love every day.  Teams that are literally changing the world.  What I’ve learned is that there is a profound difference between how the very best product companies create technology products, and the rest. And I don’t mean minor differences.  Everything from how the leaders behave, to the level of empowerment of teams, to how the organization thinks about funding, staffing and producing products, down to how product, design and engineering collaborate to discover effective solutions for their customers.   For those that have not yet had the opportunity to participate in, or observe a strong empowered product team up close, in this talk I wanted to try to give you a glimpse into some of the important differences that distinguish the best product teams from the rest."
   venue: "MAIN"
   session_page_url: "/sessions/2019/11/12/S1-001/"
   speakers:
@@ -18,9 +18,9 @@
     - "Kaarel Kuddu"
 - id: "S1-003"
   theme: "Session"
-  title: "サイン会"
+  title: "書籍「INSPIRED」サイン会"
   organization: "Silicon Valley Product Group"
-  desc: "Marty Caganサイン会"
+  desc: "書籍「INSPIRED」サイン会"
   venue: "ROOM2-1"
   session_page_url: "/sessions/2019/11/12/S1-003/"
   speakers:
@@ -157,7 +157,7 @@
     - "杉浦 正明"
 - id: "S1-019"
   theme: "Keynote"
-  title: "Keynote"
+  title: "Keynote Session"
   organization: "Zoom Video Communications, Inc"
   desc: "日本初登壇！世界No.1のビデオコミュニケーションプラットフォーム“Zoom”のプロダクトマネジメントとは？成熟市場への参入にも関わらず、圧倒的なプロダクト力で市場を牽引するZoomが成功した理由をご紹介します"
   venue: "MAIN"
@@ -311,6 +311,15 @@
   session_page_url: "/sessions/2019/11/13/S2-013/"
   speakers:
     - "棚橋 寛文"
+- id: "S2-015"
+  theme: "Session"
+  title: "ともに考え、ともにつくる"
+  organization: "ギルドワークス株式会社"
+  desc: "新たなビジネス創出へ向けて、どのような領域でどんなユーザーの問題解決をどのようにして行うのか。 仮説を立てて、ユーザーとビジネスの検証を行い、その学びからの「フィードバックによるソフトウェア開発」を実践する必要があります。 不確実性に圧倒されず、むしろ可能性を見出すチャンスと捉えるならば、アプローチは「仮説検証型のアジャイル開発」となるはずです。 このセッションでは、どのようにチームを組んで、事業の仮説検証からソフトウェアのアジャイル開発まで行っているか、ご紹介致します。 新規事業をスタートアップする「仮説検証型アジャイル開発」の実践。合言葉は「正しいものを正しくつくれているか？」"
+  venue: "ROOM2-2"
+  session_page_url: "/sessions/2019/11/13/S2-015/"
+  speakers:
+    - "市谷 聡啓"
 - id: "S2-016"
   theme: "Session"
   title: "面白いプロダクトの作り方と魅せ方"

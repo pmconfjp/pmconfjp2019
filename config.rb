@@ -11,6 +11,7 @@ activate :blog do |blog|
   blog.sources = '/items/{year}-{month}-{day}-{title}.html'
   blog.new_article_template = 'article_template.erb'
   blog.default_extension = '.md'
+  blog.publish_future_dated = true
 
   blog.custom_collections = {
     category: {

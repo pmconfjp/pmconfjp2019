@@ -11,7 +11,6 @@ activate :blog do |blog|
   blog.sources = '/items/{year}-{month}-{day}-{title}.html'
   blog.new_article_template = 'article_template.erb'
   blog.default_extension = '.md'
-  blog.publish_future_dated = true
 
   blog.custom_collections = {
     category: {
@@ -30,6 +29,7 @@ activate :blog do |blog|
   blog.sources = '/items/{year}-{month}-{day}-{title}.html'
   blog.new_article_template = 'sessions_template.erb'
   blog.default_extension = '.md'
+  blog.publish_future_dated = true
 end
 
 activate :blog do |blog|

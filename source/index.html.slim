@@ -128,19 +128,19 @@ section.section
   .container
     h2.section_title SPEAKERS(50音順)
     - if data.speakers.normals.present?
-    .speakers
-      .speakers_list
-        - data.speakers.normals.each do |normals|
-          .speakers_list_item
-            = link_to image_tag(normals.profile_image_url, class: 'speakers_list_image'), normals.session_page_url,  title: normals.name, 'data-toggle' => 'tooltip'
-            .speakers_list_name = normals.name
-            .speakers_list_organization = normals.organization
-            .speakers_list_title = normals.title
-/      .speakers_schedulelink
-/        = link_to '/schedule', class: 'btn' do
-/          i.fa.fa-arrow-circle-right
-/          | &nbsp;
-/          | タイムテーブルを見る
+      .speakers
+        .speakers_list
+          - data.speakers.normals.each do |normals|
+            .speakers_list_item
+              = link_to image_tag(normals.profile_image_url, class: 'speakers_list_image'), normals.session_page_url,  title: normals.name, 'data-toggle' => 'tooltip'
+              .speakers_list_name = normals.name
+              .speakers_list_organization = normals.organization
+              .speakers_list_title = normals.title
+      .speakers_schedulelink
+         = link_to '/schedule', class: 'btn' do
+           i.fa.fa-arrow-circle-right
+           | &nbsp;
+           | タイムテーブルを見る
 
 /       .speakers_schedulelink
 /         = link_to '/documents', class: 'btn' do
@@ -237,7 +237,7 @@ section.section
         i.fa.fa-file-o
         | &nbsp;
         | プロダクトマネージャーカンファレンス 2019 ご協賛のお願い 補助資料
-    
+
 
 /     - if data.sponsors.goods.present?
 /       h3.sponsors_title 👕 T-SHIRTS SPONSOR
@@ -262,7 +262,7 @@ section.section
                 i.fa.fa-fw.fa-external-link
                 =< jobs.title
     - else
- 
+
 
 / section.section
 /   .container

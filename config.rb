@@ -142,6 +142,7 @@ activate :deploy do |deploy|
   deploy.remote = "https://#{ENV['GH_TOKEN']}@github.com/pmconfjp/pmconfjp2019.git" # rubocop:disable all
   deploy.build_before = true
   deploy.commit_message = '[ci skip]'
+  deploy.publish_future_dated = true
 end
 
 activate :external_pipeline,

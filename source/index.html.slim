@@ -136,11 +136,11 @@ section.section
             .speakers_list_name = normals.name
             .speakers_list_organization = normals.organization
             .speakers_list_title = normals.title
-/      .speakers_schedulelink
-/        = link_to '/schedule', class: 'btn' do
-/          i.fa.fa-arrow-circle-right
-/          | &nbsp;
-/          | タイムテーブルを見る
+     .speakers_schedulelink
+       = link_to '/schedule', class: 'btn' do
+         i.fa.fa-arrow-circle-right
+         | &nbsp;
+         | タイムテーブルを見る
 
 /       .speakers_schedulelink
 /         = link_to '/documents', class: 'btn' do
@@ -237,7 +237,7 @@ section.section
         i.fa.fa-file-o
         | &nbsp;
         | プロダクトマネージャーカンファレンス 2019 ご協賛のお願い 補助資料
-    
+
 
 /     - if data.sponsors.goods.present?
 /       h3.sponsors_title 👕 T-SHIRTS SPONSOR
@@ -262,7 +262,7 @@ section.section
                 i.fa.fa-fw.fa-external-link
                 =< jobs.title
     - else
- 
+
 
 / section.section
 /   .container

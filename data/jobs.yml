@@ -1,51 +1,72 @@
-- organization: freee株式会社
-  title: プロダクトマネージャー
-  url: https://jobs.jobvite.com/freee/job/olds1fwL
-- organization: ラクスル株式会社
-  title: プロダクトマネージャー
-  url: https://www.wantedly.com/projects/297204
-- organization: ラクスル株式会社
-  title: テックリード
-  url: https://www.wantedly.com/projects/356829
-- organization: 日産自動車株式会社
-  title: プロダクトオーナー
-  url: https://www.wantedly.com/projects/333042
-- organization: ピクシブ株式会社
-  title: プロダクトマネージャー
-  url: https://www.wantedly.com/projects/244498
-- organization: 株式会社エウレカ
-  title: プロダクトマネージャー
-  url: https://eure.jp/job/product-manager/
-- organization: ユニファ株式会社
-  title: ディレクター
-  url: https://herp.careers/v1/unifa/7PsqYrmoMlNV
-- organization: エムスリー株式会社
-  title: プロダクトマネージャー
-  url: https://jobs.m3.com/engineer/
-- organization: 株式会社アイキューブドシステムズ
-  title: プロダクトマネージャー
-  url: https://www.i3-systems.com/recruit
-- organization: ルームクリップ株式会社
-  title: プロダクトマネージャー
-  url: https://www.wantedly.com/projects/260174
-- organization: ディップ株式会社
-  title: プロダクトマネージャー（AI・RPA事業部／コボット）
-  url: https://hrmos.co/pages/dip-net/jobs/0000138
-- organization: ベルフェイス株式会社
-  title: プロダクトマネージャー
-  url: https://hrmos.co/pages/bellface/jobs/11
-- organization: 株式会社ドワンゴ
-  title: Product Manager
-  url: https://progres05.jposting.net/pgdwango/u/job.phtml?job_code=1612&_type=&business=&job_field=001#job_field
-- organization: 株式会社サイダス
-  title: プロダクトマネージャー / プロダクトデザイナー
-  url: https://www.wantedly.com/companies/cydas
-- organization: トランスファーワイズ・ジャパン株式会社
-  title: シニアプロダクトマネージャー （シンガポール勤務）
-  url: https://transferwise.com/jobs/position/1793912-senior-product-manager-japanese-speaking
-- organization: グロース・アーキテクチャ＆チームス株式会社
-  title: アーキテクト
-  url: https://www.green-japan.com/company/6111
-- organization: AI inside 株式会社
-  title: 新AIプロダクト開発のプロダクトマネージャ・オーナー
-  url: https://herp.careers/v1/aiinside/Tx3Pa5OML3-6
+- organization: "LINE株式会社"
+  title: "LINE各サービス企画職およびプロダクトマネージャー"
+  url: "https://linecorp.com/ja/career/ja/all?job=%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E4%BC%81%E7%94%BB%E8%81%B7"
+- organization: "LINE株式会社"
+  title: "プロダクトマネージャー 【LINEビジネスプラットフォーム】"
+  url: "https://linecorp.com/ja/career/position/1491"
+- organization: "LINE株式会社"
+  title: "プロダクトマネージャー【LINEプラットフォーム】"
+  url: "https://linecorp.com/ja/career/position/571"
+- organization: "freee株式会社"
+  title: "プロダクトマネージャー"
+  url: "https://jobs.jobvite.com/freee/job/olds1fwL"
+- organization: "楽天株式会社"
+  title: "Product Manager (Travel)"
+  url: "https://jobs.rakuten.careers/careersection/rakuten_ext_cs/jobdetail.ftl?job=00000914&lang=en"
+- organization: "楽天株式会社"
+  title: "UI Designer (Travel)"
+  url: "https://jobs.rakuten.careers/careersection/rakuten_ext_cs/jobdetail.ftl?job=00011692&lang=ja"
+- organization: "エン・ジャパン株式会社"
+  title: "プロダクトマネージャー"
+  url: "https://en-gage.net/engage-saiyo-/work_145594/"
+- organization: "ラクスル株式会社"
+  title: "プロダクトマネージャー"
+  url: "https://www.wantedly.com/projects/297204"
+- organization: "ラクスル株式会社"
+  title: "テックリード"
+  url: "https://www.wantedly.com/projects/356829"
+- organization: "日産自動車株式会社"
+  title: "プロダクトオーナー"
+  url: "https://www.wantedly.com/projects/333042"
+- organization: "ピクシブ株式会社"
+  title: "プロダクトマネージャー"
+  url: "https://www.wantedly.com/projects/244498"
+- organization: "株式会社エウレカ"
+  title: "プロダクトマネージャー"
+  url: "https://eure.jp/job/product-manager/"
+- organization: "ユニファ株式会社"
+  title: "ディレクター"
+  url: "https://herp.careers/v1/unifa/7PsqYrmoMlNV"
+- organization: "エムスリー株式会社"
+  title: "プロダクトマネージャー"
+  url: "https://jobs.m3.com/engineer/"
+- organization: "株式会社 quantum"
+  title: "プロダクト・ストラテジスト（Product Manager職）"
+  url: "https://www.wantedly.com/projects/291169"
+- organization: "株式会社アイキューブドシステムズ"
+  title: "プロダクトマネージャー"
+  url: "https://www.i3-systems.com/recruit"
+- organization: "ルームクリップ株式会社"
+  title: "プロダクトマネージャー"
+  url: "https://www.wantedly.com/projects/260174"
+- organization: "ディップ株式会社"
+  title: "プロダクトマネージャー（AI・RPA事業部／コボット）"
+  url: "https://hrmos.co/pages/dip-net/jobs/0000138"
+- organization: "ベルフェイス株式会社"
+  title: "プロダクトマネージャー"
+  url: "https://hrmos.co/pages/bellface/jobs/11"
+- organization: "株式会社ドワンゴ"
+  title: "Product Manager"
+  url: "https://progres05.jposting.net/pgdwango/u/job.phtml?job_code=1612&_type=&business=&job_field=001#job_field"
+- organization: "株式会社サイダス"
+  title: "プロダクトマネージャー / プロダクトデザイナー"
+  url: "https://www.wantedly.com/companies/cydas"
+- organization: "トランスファーワイズ・ジャパン株式会社"
+  title: "シニアプロダクトマネージャー （シンガポール勤務）"
+  url: "https://transferwise.com/jobs/position/1793912-senior-product-manager-japanese-speaking"
+- organization: "グロース・アーキテクチャ＆チームス株式会社"
+  title: "アーキテクト"
+  url: "https://www.green-japan.com/company/6111"
+- organization: "AI inside 株式会社"
+  title: "新AIプロダクト開発のプロダクトマネージャ・オーナー"
+  url: "https://herp.careers/v1/aiinside/Tx3Pa5OML3-6"

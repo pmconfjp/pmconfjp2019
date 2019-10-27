@@ -1,118 +1,127 @@
 platinas:
-  - name: LINE株式会社
-    url: https://linecorp.com/ja/
-    logo_image_url: /assets/images/sponsors/platina/line.png
-  - name: 株式会社メルカリ
-    name2: 株式会社メルペイ
-    url: https://about.mercari.com/
-    url2: https://jp.merpay.com/
-    logo_image_url: /assets/images/sponsors/platina/mercari-merpay.png
-  - name: 株式会社クライス＆カンパニー
-    url: https://www.kandc.com/
-    logo_image_url: /assets/images/sponsors/platina/kandc.jpg
-  - name: 株式会社プレイド
-    url: https://plaid.co.jp/
-    logo_image_url: /assets/images/sponsors/platina/plaid.png
+  - name: "LINE株式会社"
+    url: "https://linecorp.com/ja/"
+    logo_image_url: "/assets/images/sponsors/platina/line.png"
+  - name: "株式会社メルカリ"
+    name2: "株式会社メルペイ"
+    url: "https://about.mercari.com/"
+    url2: "https://jp.merpay.com/"
+    logo_image_url: "/assets/images/sponsors/platina/mercari-merpay.png"
+  - name: "株式会社クライス＆カンパニー"
+    url: "https://eng.kandc.com/"
+    logo_image_url: "/assets/images/sponsors/platina/kandc.jpg"
+  - name: "株式会社プレイド"
+    url: "https://plaid.co.jp/"
+    logo_image_url: "/assets/images/sponsors/platina/plaid.png"
 
 golds:
-  - name: 株式会社ディー・エヌ・エー
-    url: https://dena.com/
-    logo_image_url: /assets/images/sponsors/gold/dena.png
-  - name: ピクシブ株式会社
-    url: https://www.pixiv.co.jp/
-    logo_image_url: /assets/images/sponsors/gold/pixiv.png
-  - name: freee株式会社
-    url: https://www.freee.co.jp/
-    logo_image_url: /assets/images/sponsors/gold/freee.png
-  - name: 楽天株式会社
-    url: https://corp.rakuten.co.jp/careers/
-    logo_image_url: /assets/images/sponsors/gold/rakuten.png
-  - name: エン・ジャパン株式会社
-    url: https://corp.en-japan.com/
-    logo_image_url: /assets/images/sponsors/gold/enjapan.png
-  - name: ラクスル株式会社
-    url: https://corp.raksul.com/
-    logo_image_url: /assets/images/sponsors/gold/raksul.png
-  - name: ウイングアーク1st株式会社
-    url: https://www.wingarc.com/
-    logo_image_url: /assets/images/sponsors/gold/WingArc1st.jpg
-  - name: 日産自動車株式会社
-    url: https://www.wantedly.com/companies/nissanmotor
-    logo_image_url: /assets/images/sponsors/gold/nissan.png
-  - name: Classi株式会社
-    url: https://corp.classi.jp/
-    logo_image_url: /assets/images/sponsors/gold/classi.jpg
-  - name: ギルドワークス株式会社
-    url: https://guildworks.jp/
-    logo_image_url: /assets/images/sponsors/gold/guildworks.png
+  - name: "株式会社ディー・エヌ・エー"
+    url: "https://dena.com/"
+    logo_image_url: "/assets/images/sponsors/gold/dena.png"
+  - name: "ピクシブ株式会社"
+    url: "https://www.pixiv.co.jp/"
+    logo_image_url: "/assets/images/sponsors/gold/pixiv.png"
+  - name: "freee株式会社"
+    url: "https://www.freee.co.jp/"
+    logo_image_url: "/assets/images/sponsors/gold/freee.png"
+  - name: "楽天株式会社"
+    url: "https://corp.rakuten.co.jp/careers/"
+    logo_image_url: "/assets/images/sponsors/gold/rakuten.png"
+  - name: "エン・ジャパン株式会社"
+    url: "https://corp.en-japan.com/"
+    logo_image_url: "/assets/images/sponsors/gold/enjapan.png"
+  - name: "ラクスル株式会社"
+    url: "https://corp.raksul.com/"
+    logo_image_url: "/assets/images/sponsors/gold/raksul.png"
+  - name: "ウイングアーク1st株式会社"
+    url: "https://www.wingarc.com/"
+    logo_image_url: "/assets/images/sponsors/gold/WingArc1st.jpg"
+  - name: "日産自動車株式会社"
+    url: "https://www.wantedly.com/companies/nissanmotor"
+    logo_image_url: "/assets/images/sponsors/gold/nissan.png"
+  - name: "Classi株式会社"
+    url: "https://corp.classi.jp/"
+    logo_image_url: "/assets/images/sponsors/gold/classi.jpg"
+  - name: "ギルドワークス株式会社"
+    url: "https://guildworks.jp/"
+    logo_image_url: "/assets/images/sponsors/gold/guildworks.png"
 
 silvers:
-  - name: 株式会社エウレカ
-    url: https://eure.jp
-    logo_image_url: /assets/images/sponsors/silver/eureka.png
-  - name: ユニファ株式会社
-    url: https://unifa-e.com/
-    logo_image_url: /assets/images/sponsors/silver/unifa.png
-  - name: エムスリー株式会社
-    url: https://jobs.m3.com/engineer/
-    logo_image_url: /assets/images/sponsors/silver/m3.png
-  - name: 株式会社QUANTUM
-    url: https://quantum.ne.jp/
-    logo_image_url: /assets/images/sponsors/silver/quantum.png
-  - name: 株式会社アイキューブドシステムズ
-    url: https://www.i3-systems.com/
-    logo_image_url: /assets/images/sponsors/silver/i3systems.png
-  - name: 株式会社チームスピリット
-    url: https://corp.teamspirit.com/ja-jp/
-    logo_image_url: /assets/images/sponsors/silver/teamspirit.png
+  - name: "株式会社エウレカ"
+    url: "https://eure.jp"
+    logo_image_url: "/assets/images/sponsors/silver/eureka.png"
+  - name: "ユニファ株式会社"
+    url: "https://unifa-e.com/"
+    logo_image_url: "/assets/images/sponsors/silver/unifa.png"
+  - name: "エムスリー株式会社"
+    url: "https://jobs.m3.com/engineer/"
+    logo_image_url: "/assets/images/sponsors/silver/m3.png"
+  - name: "株式会社QUANTUM"
+    url: "https://quantum.ne.jp/"
+    logo_image_url: "/assets/images/sponsors/silver/quantum.png"
+  - name: "株式会社アイキューブドシステムズ"
+    url: "https://www.i3-systems.com/"
+    logo_image_url: "/assets/images/sponsors/silver/i3systems.png"
+  - name: "株式会社チームスピリット"
+    url: "https://corp.teamspirit.com/ja-jp/"
+    logo_image_url: "/assets/images/sponsors/silver/teamspirit.png"
+  - name: "株式会社ミクシィ"
+    url: "https://mixi.co.jp/recruit/"
+    logo_image_url: "/assets/images/sponsors/silver/mixi.png"
 
 bronze:
-  - name: ルームクリップ株式会社
-    url: https://roomclip.jp/
-    logo_image_url: /assets/images/sponsors/bronze/roomclip.png
-  - name: ディップ株式会社
-    url: https://www.dip-net.co.jp/service/kobot
-    logo_image_url: /assets/images/sponsors/bronze/kobot_dip.png
-  - name: ベルフェイス株式会社
-    url: https://bell-face.com/reason/
-    logo_image_url: /assets/images/sponsors/bronze/bellface.png
-  - name: Sansan株式会社
-    url: https://buildersbox.corp-sansan.com/
-    logo_image_url: /assets/images/sponsors/bronze/sansan.png
-  - name: 株式会社ドワンゴ
-    url: https://dwango.co.jp
-    logo_image_url: /assets/images/sponsors/bronze/dwango.png
-  - name: NTTコミュニケーションズ株式会社　SpoLive
-    url: https://spo.live/
-    logo_image_url: /assets/images/sponsors/bronze/spolive.png
-  - name: ヤフー株式会社
-    url: https://www.yahoo.co.jp
-    logo_image_url: /assets/images/sponsors/bronze/yahoo.png
-  - name: 株式会社サイダス
-    url: https://www.cydas.com/
-    logo_image_url: /assets/images/sponsors/bronze/cydas.png
-  - name: コニカミノルタ株式会社
-    url: https://www.konicaminolta.com/jp-ja/index.html
-    logo_image_url: /assets/images/sponsors/bronze/konicaminolta.jpg
+  - name: "ルームクリップ株式会社"
+    url: "https://roomclip.jp/"
+    logo_image_url: "/assets/images/sponsors/bronze/roomclip.png"
+  - name: "ディップ株式会社"
+    url: "https://www.dip-net.co.jp/service/kobot"
+    logo_image_url: "/assets/images/sponsors/bronze/kobot_dip.png"
+  - name: "ベルフェイス株式会社"
+    url: "https://bell-face.com/reason/"
+    logo_image_url: "/assets/images/sponsors/bronze/bellface.png"
+  - name: "Sansan株式会社"
+    url: "https://buildersbox.corp-sansan.com/"
+    logo_image_url: "/assets/images/sponsors/bronze/sansan.png"
+  - name: "株式会社ドワンゴ"
+    url: "https://dwango.co.jp"
+    logo_image_url: "/assets/images/sponsors/bronze/dwango.png"
+  - name: "NTTコミュニケーションズ株式会社　SpoLive"
+    url: "https://spo.live/"
+    logo_image_url: "/assets/images/sponsors/bronze/spolive.png"
+  - name: "ヤフー株式会社"
+    url: "https://www.yahoo.co.jp"
+    logo_image_url: "/assets/images/sponsors/bronze/yahoo.png"
+  - name: "株式会社サイダス"
+    url: "https://www.cydas.com/"
+    logo_image_url: "/assets/images/sponsors/bronze/cydas.png"
+  - name: "コニカミノルタ株式会社"
+    url: "https://www.konicaminolta.com/jp-ja/index.html"
+    logo_image_url: "/assets/images/sponsors/bronze/konicaminolta.jpg"
+  - name: "Pivotalジャパン株式会社"
+    url: "https://pivotal.io/jp"
+    logo_image_url: "/assets/images/sponsors/bronze/pivotal.png"
 
 logo:
-  - name: トランスファーワイズ・ジャパン株式会社
-    url: https://transferwise.com/jp
-    logo_image_url: /assets/images/sponsors/logo/transferwise.png
-  - name: 株式会社空
-    url: https://www.sora.flights
-    logo_image_url: /assets/images/sponsors/logo/sora.jpg
-  - name: グロース・アーキテクチャ&チームス株式会社
-    url: https://www.graat.co.jp
-    logo_image_url: /assets/images/sponsors/logo/graat.png
-  - name: パーソルホールディングス株式会社
-    url: https://www.persol-group.co.jp/
-    logo_image_url: /assets/images/sponsors/logo/persol.jpg
-  - name: AI inside株式会社
-    url: https://inside.ai/
-    logo_image_url: /assets/images/sponsors/logo/AIinside.png
+  - name: "トランスファーワイズ・ジャパン株式会社"
+    url: "https://transferwise.com/jp"
+    logo_image_url: "/assets/images/sponsors/logo/transferwise.png"
+  - name: "株式会社空"
+    url: "https://www.sora.flights"
+    logo_image_url: "/assets/images/sponsors/logo/sora.jpg"
+  - name: "グロース・アーキテクチャ&チームス株式会社"
+    url: "https://www.graat.co.jp"
+    logo_image_url: "/assets/images/sponsors/logo/graat.png"
+  - name: "パーソルホールディングス株式会社"
+    url: "https://www.persol-group.co.jp/"
+    logo_image_url: "/assets/images/sponsors/logo/persol.jpg"
+  - name: "AI inside株式会社"
+    url: "https://inside.ai/"
+    logo_image_url: "/assets/images/sponsors/logo/AIinside.png"
 
 drinks:
-  - name: BASE株式会社
-    url: http://thebase.in/
-    logo_image_url: /assets/images/sponsors/drink/base.png
+  - name: "BASE株式会社"
+    url: "http://thebase.in/"
+    logo_image_url: "/assets/images/sponsors/drink/base.png"
+  - name: "パーソルキャリア株式会社"
+    url: "https://www.si-ght.jp/"
+    logo_image_url: "/assets/images/sponsors/drink/sight.png"

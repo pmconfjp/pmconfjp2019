@@ -123,5 +123,8 @@ drinks:
     url: "http://thebase.in/"
     logo_image_url: "/assets/images/sponsors/drink/base.png"
   - name: "パーソルキャリア株式会社"
+    url: "https://www.persol-career.co.jp/"
+    logo_image_url: "/assets/images/sponsors/drink/persol.png"
+  - name: "Sky株式会社"
     url: "https://www.si-ght.jp/"
     logo_image_url: "/assets/images/sponsors/drink/sight.png"

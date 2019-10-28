@@ -63,32 +63,31 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-001"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - keynotes.each do |keynotes|
                   - if keynotes.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag keynotes.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag keynotes.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
+                span.timetable_transrate 通訳あり
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
-          <td class="timetable_relay" rowspan="10">Main Room中継</td>
-          <td class="timetable_relay" rowspan="10">Main Room中継</td>
+          <td class="timetable_relay" rowspan="10">
+            div Main Room中継
+            span.timetable_transrate 通訳あり
+          </td>
+          <td class="timetable_relay" rowspan="10">
+            div Main Room中継
+            span.timetable_transrate 通訳あり
+          </td>
         </tr>
         <tr>
           <td class="timetable_time">10:20</td>
@@ -133,32 +132,31 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-002"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - keynotes.each do |keynotes|
                   - if keynotes.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag keynotes.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag keynotes.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
+                span.timetable_transrate 通訳あり
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
-          <td class="timetable_relay" rowspan="9">Main Room中継</td>
-          <td class="timetable_relay" rowspan="9">Main Room中継</td>
+          <td class="timetable_relay" rowspan="9">
+            div Main Room中継
+            span.timetable_transrate 通訳あり
+          </td>
+          <td class="timetable_relay" rowspan="9">
+            div Main Room中継
+            span.timetable_transrate 通訳あり
+          </td>
           <td class="timetable_relay" rowspan="78">Main Room中継</td>
           <td class="timetable_extra" rowspan="96">ブース展示</td>
         </tr>
@@ -201,25 +199,18 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                 - sessionNotExist = false
                 - keynotes.each do |keynotes|
                   - if keynotes.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag keynotes.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag keynotes.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
         </tr>
         <tr>
@@ -260,29 +251,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-004"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
           <td class="timetable_relay" rowspan="6">Main Room中継</td>
           <td rowspan="6" class="timetable_session">
@@ -290,58 +273,42 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-005"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
           <td rowspan="3" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S1-020"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
         </tr>
         <tr>
@@ -364,29 +331,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-021"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
         </tr>
         <tr>
@@ -405,58 +364,42 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-007"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
           <td class="timetable_bside" rowspan="6">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S1-008"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
           <td rowspan="2">休憩</td>
         </tr>
@@ -470,58 +413,42 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-006"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
           <td rowspan="3" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S1-022"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
         </tr>
         <tr>
@@ -547,29 +474,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-023"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
         </tr>
         <tr>
@@ -579,87 +498,63 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-009"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
           <td rowspan="4" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S1-010"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
           <td class="timetable_bside" rowspan="3">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S1-011"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
         </tr>
         <tr>
@@ -682,29 +577,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-024"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
         </tr>
         <tr>
@@ -717,87 +604,63 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-012"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
           <td rowspan="6" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S1-013"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
           <td class="timetable_bside" rowspan="3">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S1-014"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
         </tr>
         <tr>
@@ -815,29 +678,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-025"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
         </tr>
         <tr>
@@ -866,14 +721,13 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                 - speakers.each do |speakers|
                   - sessions.speakers.each do |session_speaker|
                     - if speakers.name == session_speaker
-                      .timetable_speakerImage
-                        = image_tag speakers.profile_image_url, width: '50', height: '50'
+                      .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                       .timetable_speaker
                         .timetable_speakerName = session_speaker
                 .timetable_descriptions
                   .timetable_title = link_to sessions.title, sessions.session_page_url
             - if sessionNotExist
-                span.timetable_theme | Session
+                span.timetable_theme Session
                 .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
@@ -885,66 +739,52 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-016"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_descriptions
-                    .timetable_title
-                      = link_to sessions.title, sessions.session_page_url
+                    .timetable_title = link_to sessions.title, sessions.session_page_url
                   .timetable_speaker
                     .timetable_speakerName
                       - sessions.speakers.each do |session_speaker|
-                        - if session_speaker == sessions.speakers[0]
-                          = session_speaker
+                        - if session_speaker == sessions.speakers[0] = session_speaker
                         - else
                           | <br />
                           = session_speaker
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
           <td rowspan="3" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S1-026"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_descriptions
-                    .timetable_title
-                      = link_to sessions.title, sessions.session_page_url
+                    .timetable_title = link_to sessions.title, sessions.session_page_url
                   .timetable_speaker
                     .timetable_speakerName
                       - sessions.speakers.each do |session_speaker|
-                        - if session_speaker == sessions.speakers[0]
-                          = session_speaker
+                        - if session_speaker == sessions.speakers[0] = session_speaker
                         - else
                           | <br />
                           = session_speaker
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
         </tr>
         <tr>
@@ -980,29 +820,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-017"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
           <td class="timetable_bside" rowspan="6">
             - sessionNotExist = true
@@ -1057,31 +889,27 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S1-019"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - keynotes.each do |keynotes|
                   - if keynotes.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag keynotes.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag keynotes.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
+                span.timetable_transrate 通訳あり
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
           </td>
-          <td class="timetable_relay" rowspan="9">Main Room中継</td>
+          <td class="timetable_relay" rowspan="9">
+            Main Room中継
+            span.timetable_transrate 通訳あり
+          </td>
         </tr>
         <tr>
           <td class="timetable_time">16:55</td>
@@ -1237,87 +1065,63 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-001"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="10" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-002"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="10" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-003"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -1366,29 +1170,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-004"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="6" class="timetable_relay">Main Room中継</td>
         <td rowspan="6" class="timetable_session">
@@ -1396,29 +1192,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-005"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -1452,87 +1240,63 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-006"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="6" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-007"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="6" class="timetable_bside">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-008"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -1596,29 +1360,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-009"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="6" class="timetable_relay">Main Room中継</td>
         <td rowspan="6" class="timetable_session">
@@ -1647,29 +1403,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-028"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -1692,29 +1440,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-029"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -1743,69 +1483,53 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                 .timetable_descriptions
                   .timetable_title = link_to sessions.title, sessions.session_page_url
             - if sessionNotExist
-                span.timetable_theme | Session
+                span.timetable_theme Session
                 .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="6" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-012"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="6" class="timetable_bside">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-013"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="2">休憩</td>
       </tr>
@@ -1819,29 +1543,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-030"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -1867,29 +1583,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-031"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -1899,59 +1607,63 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-014"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
-        <td rowspan="6" class="timetable_relay">Main Room中継</td>
+        <td rowspan="6" class="timetable_session">
+            - sessionNotExist = true
+            - sessions.each do |sessions|
+              - if sessions.id == "S2-037"
+                - sessionNotExist = false
+                span.timetable_theme = sessions.theme
+                - speakers.each do |speakers|
+                  - if speakers.name == sessions.speakers[0]
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_descriptions
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
+                    .timetable_speaker
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
+            - if sessionNotExist
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                .timetable_descriptions
+                  .timetable_speaker
+                    .timetable_speakerName 調整中
+        </td>
         <td rowspan="6" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-015"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage= image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -1971,29 +1683,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-032"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -2016,87 +1720,63 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-016"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="4" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-017"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
-        <td rowspan="6" class="timetable_bside">
+        <td rowspan="6" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-018"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | B-Side
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -2106,29 +1786,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-033"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -2153,58 +1825,42 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-019"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="3" class="timetable_bside">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-020"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="6">休憩</td>
         <td rowspan="3" class="timetable_session">
@@ -2212,29 +1868,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-034"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -2259,29 +1907,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-035"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -2291,87 +1931,63 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-021"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="6" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-022"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="3" class="timetable_bside">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S2-023"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -2393,29 +2009,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-036"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -2429,29 +2037,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-024"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>
@@ -2472,29 +2072,21 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
             - sessions.each do |sessions|
               - if sessions.id == "S2-025"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="6" class="timetable_session">
             - sessionNotExist = true
@@ -2511,40 +2103,32 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                 .timetable_descriptions
                   .timetable_title = link_to sessions.title, sessions.session_page_url
             - if sessionNotExist
-                span.timetable_theme | Session
+                span.timetable_theme Session
                 .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName | 調整中
+                    .timetable_speakerName 調整中
         </td>
         <td rowspan="6" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
               - if sessions.id == "S1-027"
                 - sessionNotExist = false
-                span.timetable_theme
-                  = sessions.theme
+                span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
                   - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage
-                      = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
                     .timetable_descriptions
-                      .timetable_title
-                        = link_to sessions.title, sessions.session_page_url
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
                     .timetable_speaker
-                      .timetable_speakerName
-                        = sessions.speakers[0]
-                      span
-                        = sessions.organization
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
             - if sessionNotExist
-                span.timetable_theme
-                  | Session
-                .timetable_speakerImage
-                  = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
                 .timetable_descriptions
                   .timetable_speaker
-                    .timetable_speakerName
-                      | 調整中
+                    .timetable_speakerName 調整中
         </td>
       </tr>
       <tr>

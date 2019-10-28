@@ -74,6 +74,17 @@
   &_session {
   }
 
+  &_transrate {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 0 5px;
+    background-color: #fb7575;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
   &_theme {
     display: inline-block;
     margin-bottom: 16px;

@@ -1630,13 +1630,13 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                 - sessionNotExist = false
                 span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
-                  - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
-                    .timetable_descriptions
-                      .timetable_title = link_to sessions.title, sessions.session_page_url
-                    .timetable_speaker
-                      .timetable_speakerName = sessions.speakers[0]
-                      span = sessions.organization
+                  - sessions.speakers.each do |session_speaker|
+                    - if speakers.name == session_speaker
+                      .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
+                      .timetable_speaker
+                        .timetable_speakerName = session_speaker
+                .timetable_descriptions
+                  .timetable_title = link_to sessions.title, sessions.session_page_url
             - if sessionNotExist
                 span.timetable_theme Session
                 .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
@@ -2074,27 +2074,6 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
                 - sessionNotExist = false
                 span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|
-                  - if speakers.name == sessions.speakers[0]
-                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
-                    .timetable_descriptions
-                      .timetable_title = link_to sessions.title, sessions.session_page_url
-                    .timetable_speaker
-                      .timetable_speakerName = sessions.speakers[0]
-                      span = sessions.organization
-            - if sessionNotExist
-                span.timetable_theme Session
-                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
-                .timetable_descriptions
-                  .timetable_speaker
-                    .timetable_speakerName 調整中
-        </td>
-        <td rowspan="6" class="timetable_session">
-            - sessionNotExist = true
-            - sessions.each do |sessions|
-              - if sessions.id == "S2-026"
-                - sessionNotExist = false
-                span.timetable_theme = sessions.theme
-                - speakers.each do |speakers|
                   - sessions.speakers.each do |session_speaker|
                     - if speakers.name == session_speaker
                       .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
@@ -2112,7 +2091,28 @@ descriptipon: pmconf 2019 のタイムテーブルを紹介します。
         <td rowspan="6" class="timetable_session">
             - sessionNotExist = true
             - sessions.each do |sessions|
-              - if sessions.id == "S1-027"
+              - if sessions.id == "S2-026"
+                - sessionNotExist = false
+                span.timetable_theme = sessions.theme
+                - speakers.each do |speakers|
+                  - if speakers.name == sessions.speakers[0]
+                    .timetable_speakerImage = image_tag speakers.profile_image_url, width: '50', height: '50'
+                    .timetable_descriptions
+                      .timetable_title = link_to sessions.title, sessions.session_page_url
+                    .timetable_speaker
+                      .timetable_speakerName = sessions.speakers[0]
+                      span = sessions.organization
+            - if sessionNotExist
+                span.timetable_theme Session
+                .timetable_speakerImage = image_tag '../assets/images/pmconf_ico.png', width: '50', height: '50'
+                .timetable_descriptions
+                  .timetable_speaker
+                    .timetable_speakerName 調整中
+        </td>
+        <td rowspan="6" class="timetable_session">
+            - sessionNotExist = true
+            - sessions.each do |sessions|
+              - if sessions.id == "S2-027"
                 - sessionNotExist = false
                 span.timetable_theme = sessions.theme
                 - speakers.each do |speakers|

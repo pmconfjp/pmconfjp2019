@@ -128,3 +128,6 @@ drinks:
   - name: "Sky株式会社"
     url: "https://www.si-ght.jp/"
     logo_image_url: "/assets/images/sponsors/drink/sight.png"
+  - name: "サイレントエナジー株式会社"
+    url: "https://28.silentenergy.jp/"
+    logo_image_url: "/assets/images/sponsors/drink/silentenergy.png"

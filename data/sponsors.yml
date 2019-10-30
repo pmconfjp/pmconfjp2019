@@ -100,6 +100,9 @@ bronze:
   - name: "Pivotalジャパン株式会社"
     url: "https://pivotal.io/jp"
     logo_image_url: "/assets/images/sponsors/bronze/pivotal.png"
+  - name: "日本アイ・ビー・エム株式会社"
+    url: "https://www.ibm.com/jp-ja/embed/cloud-service-provider"
+    logo_image_url: "/assets/images/sponsors/bronze/ibm.png"
 
 logo:
   - name: "トランスファーワイズ・ジャパン株式会社"

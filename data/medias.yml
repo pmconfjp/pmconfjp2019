@@ -26,3 +26,7 @@
   media_name: Software Design
   url: http://gihyo.jp/magazine/SD/
   logo_image_url: /assets/images/sponsors/media/softwaredesign.png
+- name: 株式会社翔泳社
+  media_name: CodeZine
+  url: https://codezine.jp/
+  logo_image_url: /assets/images/sponsors/media/codezine.png

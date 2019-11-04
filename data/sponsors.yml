@@ -103,6 +103,9 @@ bronze:
   - name: "日本アイ・ビー・エム株式会社"
     url: "https://www.ibm.com/jp-ja/embed/cloud-service-provider"
     logo_image_url: "/assets/images/sponsors/bronze/ibm.png"
+  - name: "KDDI株式会社"
+    url: "https://www.kddi.com/business/"
+    logo_image_url: "/assets/images/sponsors/bronze/kddi.png"
 
 logo:
   - name: "トランスファーワイズ・ジャパン株式会社"

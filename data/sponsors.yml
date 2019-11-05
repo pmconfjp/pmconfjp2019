@@ -137,3 +137,6 @@ drinks:
   - name: "サイレントエナジー株式会社"
     url: "https://28.silentenergy.jp/"
     logo_image_url: "/assets/images/sponsors/drink/silentenergy.png"
+  - name: "株式会社ヤプリ"
+    url: "https://yappli.co.jp/"
+    logo_image_url: "/assets/images/sponsors/drink/yappli.png"

@@ -324,7 +324,7 @@
   theme: "Session"
   title: "PDMのFlexibilityについて"
   organization: "楽天株式会社"
-  desc: ""
+  desc: "会社や組織によってPMに求められる責任や役割は違いますが、PMはどこまでの範囲を担当するべきなのでしょうか。また組織を超えた協力体制を作るには、PMはどのように振る舞い、立ち回るべきなのでしょうか。成功例と失敗例を交えながら楽天トラベルのPMについて紹介させていただきます。"
   venue: "ROOM2-1"
   session_page_url: "/sessions/2019/11/13/S2-012/"
   speakers:
@@ -405,7 +405,7 @@
   theme: "Session"
   title: "Rebuild the Industry 〜産業の半自動化を実現するプロダクト開発手法〜"
   organization: "ラクスル株式会社"
-  desc: "未定"
+  desc: "ラクスルは、印刷、物流、オフライン広告といった巨大で伝統的なリアル産業を変革するためのプロダクト開発をしています。特に、印刷のraksul.comでは、TVCMを打ち続けながらもリピート率が毎年上昇しているのですが、その裏には、B2Bで特徴的な複雑で取引コストが高いトランザクションを半自動化するプロダクトが大きな鍵になっています。このセッションでは、複雑なオペレーションを半自動化して、テクノロジーレバレッジを効かせたラクスルの開発事例やパターンをいくつかご紹介していきます。"
   venue: "MAIN"
   session_page_url: "/sessions/2019/11/13/S2-021/"
   speakers:
@@ -486,9 +486,9 @@
     - "戸松 大輔"
 - id: "S2-034"
   theme: "Session"
-  title: "プロフィール詳細"
+  title: "顧客要望と情熱の間- B2B SaaS のプロダクトマネジメント -"
   organization: "株式会社アイキューブドシステムズ"
-  desc: "ブロンズ"
+  desc: "B2B/エンタープライズな SaaS におけるプロダクトマネジメントについてお話します。"
   venue: "ROOM2-3"
   session_page_url: "/sessions/2019/11/13/S2-034/"
   speakers:

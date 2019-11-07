@@ -347,15 +347,6 @@
   session_page_url: "/sessions/2019/11/13/S2-014/"
   speakers:
     - "ピョートル・フェリクス・グジバチ"
-- id: "S2-037"
-  theme: "Panel Session"
-  title: "CTOやVPoEとプロダクトマネージャーとの理想の関係"
-  organization: "株式会社レクター"
-  desc: ""
-  venue: "ROOM2-1"
-  session_page_url: "/sessions/2019/11/13/S2-037/"
-  speakers:
-    - "松岡 剛志"
 - id: "S2-015"
   theme: "Session"
   title: "ともに考え、ともにつくる"
@@ -520,3 +511,12 @@
   session_page_url: "/sessions/2019/11/13/S2-036/"
   speakers:
     - "坂田 一倫"
+- id: "S2-037"
+  theme: "Panel Session"
+  title: "CTOやVPoEとプロダクトマネージャーとの理想の関係"
+  organization: "株式会社レクター"
+  desc: "多くの企業では「CTO」「VPoE」「プロダクトマネージャー」といった役割を作り、より良いプロダクト開発に取り組んでいます。これらの役割が協働することにより、技術や組織、メンバー、市場や利用ユーザーなど、様々な要素を元により良いプロダクト開発のための判断を行います。しかし、役割の違いによって生まれる視点の違いによって小さな対立が発生することも少なくありません。プロダクト開発において、いったいどのような関係が理想なのでしょうか？理想の関係について考えてみましょう。"
+  venue: "ROOM2-1"
+  session_page_url: "/sessions/2019/11/13/S2-037/"
+  speakers:
+    - "松岡 剛志"

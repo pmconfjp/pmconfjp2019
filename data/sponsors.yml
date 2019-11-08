@@ -140,3 +140,6 @@ drinks:
   - name: "株式会社ヤプリ"
     url: "https://yappli.co.jp/"
     logo_image_url: "/assets/images/sponsors/drink/yappli.png"
+  - name: "株式会社サイバーエージェント"
+    url: "https://www.cyberagent.co.jp/"
+    logo_image_url: "/assets/images/sponsors/drink/ca.png"

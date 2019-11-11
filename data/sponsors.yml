@@ -146,3 +146,17 @@ drinks:
   - name: "株式会社メルカリ"
     url: "https://about.mercari.com/"
     logo_image_url: "/assets/images/sponsors/drink/mercari.png"
+
+community:
+  - name: "POStudy - プロダクトオーナーシップ研究会"
+    url: "https://postudy.doorkeeper.jp/"
+    logo_image_url: "/assets/images/sponsors/community/postudy.png"
+  - name: "Product Managers Japan (PMJP)"
+    url: "http://productmanagers.jp/"
+    logo_image_url: "/assets/images/sponsors/community/pmjp.png"
+  - name: "PM若手の会"
+    url: "https://young-pm-meetup.connpass.com/"
+    logo_image_url: "/assets/images/sponsors/community/pmwakate.png"
+  - name: "プロダクトマネージャーカフェ ～Product Manager Cafe～"
+    url: "https://pdmcafe.connpass.com/"
+    logo_image_url: "/assets/images/sponsors/community/pdmcafe.png"

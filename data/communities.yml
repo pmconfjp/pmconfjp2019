@@ -1,4 +1,12 @@
-#communities:
-#  - name: pmconf
-#    url: "https://linecorp.com"
-#    logo_image_url: /assets/images/pmconf_ico.png
+- name: pdmcafe
+  url: "https://pdmcafe.connpass.com/"
+  logo_image_url: /assets/images/sponsors/community/pdmcafe.png
+- name: pmjp
+  url: "http://productmanagers.jp/"
+  logo_image_url: /assets/images/sponsors/community/pmjp.png
+- name: postudy
+  url: "http://www.postudy.com/"
+  logo_image_url: /assets/images/sponsors/community/postudy.png
+- name: 若手PM会
+  url: "https://young-pm-meetup.connpass.com/"
+  logo_image_url: /assets/images/sponsors/community/wakatepm.png

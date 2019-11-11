@@ -122,6 +122,7 @@ helpers do
   def communities
     arr = []
     data.communities.each { |co| arr << co }
+    arr
   end
 end
 # rubocop:enable all

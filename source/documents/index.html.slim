@@ -15,5 +15,5 @@ descriptipon: メディアに掲載された記事をまとめました。
             .scheduleTable_line
               .scheduleTable_line_session
                 .scheduleTable_line_descriptions
-                  .scheduleTable_line_title = link_to articles.title, articles.url, title: articles.title, 'data-toggle' => 'tooltip'
+                  .scheduleTable_line_title = link_to articles.title, articles.url, title: articles.title, target: '_blank', 'data-toggle' => 'tooltip'
                   .scheduleTable_line_speaker = 'by ' + articles.publisher + ' (' + articles.published_at + ')'

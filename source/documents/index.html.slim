@@ -11,45 +11,9 @@ descriptipon: メディアに掲載された記事をまとめました。
     .tab-content
       .tab-pane.active#day1
         .scheduleTable
-          .scheduleTable_line
-            .scheduleTable_line_session
-              .scheduleTable_line_descriptions
-                .scheduleTable_line_title
-                  | <a href="https://codezine.jp/article/detail/11268">ユーザーにとって本当に価値のある「愛されるプロダクト」作りとは？</a>
-                .scheduleTable_line_speaker
-                  | by CodeZine (2018-12-11)
-          .scheduleTable_line
-            .scheduleTable_line_session
-              .scheduleTable_line_descriptions
-                .scheduleTable_line_title
-                  | <a href="https://careerhack.en-japan.com/report/detail/1038">賛否両論を経て。「LINEメッセージ取り消し機能」実装の真相</a>
-                .scheduleTable_line_speaker
-                  | by CAREER HACK (2018-11-28)
-          .scheduleTable_line
-            .scheduleTable_line_session
-              .scheduleTable_line_descriptions
-                .scheduleTable_line_title
-                  | <a href="https://careerhack.en-japan.com/report/detail/1036">PMがハマりやすい、toBプロダクト開発の落とし穴 「ホームランではなく、ヒットを打ち続けるべし」</a>
-                .scheduleTable_line_speaker
-                  | by CAREER HACK (2018-11-21)
-          .scheduleTable_line
-            .scheduleTable_line_session
-              .scheduleTable_line_descriptions
-                .scheduleTable_line_title
-                  | <a href="https://careerhack.en-japan.com/report/detail/1034">広報戦略もPMが考える。アプリDL数3400万を突破、『AbemaTV』のグロース策</a>
-                .scheduleTable_line_speaker
-                  | by CAREER HACK (2018-11-15)
-          .scheduleTable_line
-            .scheduleTable_line_session
-              .scheduleTable_line_descriptions
-                .scheduleTable_line_title
-                  | <a href="https://careerhack.en-japan.com/report/detail/1033">PM不足のピンチを脱するために。ZOZOテクノロジーズ金山裕樹の秘策</a>
-                .scheduleTable_line_speaker
-                  | by CAREER HACK (2018-11-14)
-          .scheduleTable_line
-            .scheduleTable_line_session
-              .scheduleTable_line_descriptions
-                .scheduleTable_line_title
-                  | <a href="https://sogyotecho.jp/pm-conference/">プロダクトマネジメントの最前線をレポートします</a>
-                .scheduleTable_line_speaker
-                  | by 創業手帳 (2018-11-12)
+          - data.articles.each do |articles|
+            .scheduleTable_line
+              .scheduleTable_line_session
+                .scheduleTable_line_descriptions
+                  .scheduleTable_line_title = link_to articles.title, articles.url, title: articles.title, 'data-toggle' => 'tooltip'
+                  .scheduleTable_line_speaker = 'by ' + articles.publisher + ' (' + articles.published_at + ')'

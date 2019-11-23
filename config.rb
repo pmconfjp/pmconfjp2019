@@ -119,6 +119,12 @@ helpers do
     arr
   end
 
+  def articles
+    arr = []
+    data.articles.each { |art| arr << art }
+    arr
+  end
+
   def communities
     arr = []
     data.communities.each { |co| arr << co }

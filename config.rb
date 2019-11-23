@@ -85,7 +85,7 @@ helpers do
   def members
     arr = []
     data.staff.organizers.each { |o| arr << o }
-    data.staff.secretariat.each { |o| arr << o }
+    data.staff.member.each { |o| arr << o }
     arr
   end
 

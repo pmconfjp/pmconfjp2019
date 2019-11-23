@@ -60,3 +60,28 @@ organizers:
     github: https://github.com/ykmc09
     facebook: https://facebook.com/ykmc09
     profile_image_url: /assets/images/profile_images/ykmc09.jpeg
+member:
+  - name: 大倉 悠輝
+    organization: 株式会社カオナビ
+    title: プロダクトマネージャー
+    profile_image_url: /assets/images/profile_images/yuki-okura.png
+  - name: 小城 久美子
+    organization: Tably株式会社
+    title: ""
+    profile_image_url: /assets/images/profile_images/kumiko-koshiro.png
+  - name: 佐藤 翔
+    organization: Inedo Japan
+    title: マーケティングマネージャー
+    profile_image_url: /assets/images/profile_images/sho-sato.png
+  - name: 久津 佑介
+    organization: 株式会社CAMPFIRE
+    title: プロダクトマネージャー
+    profile_image_url: /assets/images/profile_images/yusuke-hisatsu.png
+  - name: 三木 創一郎
+    organization: 株式会社タイムチケット
+    title: CTO
+    profile_image_url: /assets/images/profile_images/soichiro-miki.png
+  - name: 横井 啓介
+    organization: 株式会社フライウィール
+    title: プロダクトマネージャー
+    profile_image_url: /assets/images/profile_images/keisuke-yokoi.png

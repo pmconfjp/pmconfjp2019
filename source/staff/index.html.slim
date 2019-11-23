@@ -12,10 +12,10 @@ descriptipon: 運営スタッフ一覧と運営へのお問い合わせについ
     .staffList_list
       - data.staff.organizers.each do |organizer|
         = partial 'staff/human_card', locals: { human: organizer }
-/    h2.staffList_title 事務局
-/    .staffList_list
-/      - data.staff.secretariat.each do |secretariat|
-/        = partial 'staff/human_card', locals: { human: secretariat }
+    h2.staffList_title 運営メンバー
+    .staffList_list
+      - data.staff.member.each do |member|
+        = partial 'staff/human_card', locals: { human: member }
 
     h2.staffList_title お問い合わせ
     p プロダクトマネージャーカンファレンス運営事務局
